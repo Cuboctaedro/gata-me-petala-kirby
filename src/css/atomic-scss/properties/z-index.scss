@@ -1,0 +1,27 @@
+/*  =========================================================================
+    Z_INDEX
+    ========================================================================= */
+
+$local-z-index-settings: (
+    'responsive' : false,
+    'hover'      : true,
+    'classname'  : 'z-index-',
+    'values': (
+        '-2': -20,
+        '-1': -10,
+        '0' : 0,
+        '1' : 10,
+        '2' : 20,
+        '3' : 30,
+        '4' : 10,
+        '5' : 50
+    )
+);
+
+@if global_variable_exists(global-z-index-settings) {
+
+    $z-index-settings: map-merge($local-z-index-settings, $global-z-index-settings);
+
+    @include writeClasses('z-index', $z-index-settings);
+
+}

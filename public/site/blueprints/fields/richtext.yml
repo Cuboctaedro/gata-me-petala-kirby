@@ -1,0 +1,13 @@
+label: Text
+type: markdown
+tools:
+  - bold
+  - italic
+  - header1
+  - header2
+  - link
+  - orderedList
+  - unorderedList
+header1: h2
+header2: h3
+

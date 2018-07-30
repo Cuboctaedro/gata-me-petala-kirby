@@ -1,0 +1,6 @@
+label: Select source
+type: radio
+default: youtube
+options:
+  youtube: YouTube
+  vimeo: Vimeo

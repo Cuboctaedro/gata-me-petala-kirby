@@ -1,0 +1,33 @@
+title: Page
+pages:
+  template:
+    - default
+options:
+  preview: true
+  status: true
+  template: false
+  url: false
+  delete: true
+files: true
+fields:
+  previewfiles:
+    type: previewfiles
+  tab1:
+    label: Content
+    type:  tabs
+  title:
+    label: Title
+    type:  text
+  text: richtext
+  tab2:
+    label: Settings
+    type:  tabs
+  featuredimage:
+    extends: singleimage
+    label: Featured Image
+  headertext:
+    label: Header Text
+    type:  text
+  summary:
+    extends: plaintext
+    label: Summary

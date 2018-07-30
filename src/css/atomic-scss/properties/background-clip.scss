@@ -1,0 +1,23 @@
+/*  =========================================================================
+    BACKGROUND CLIP
+    ========================================================================= */
+
+$local-background-clip-settings: (
+    'responsive' : false,
+    'hover'      : false,
+    'classname'  : 'background-clip-',
+    'values': (
+        'border-box'    : border-box,
+        'padding-box'   : padding-box,
+        'content-box'   : content-box
+    )
+);
+
+
+@if global_variable_exists(global-background-clip-settings) {
+
+    $background-clip-settings: map-merge($local-background-clip-settings, $global-background-clip-settings);
+
+    @include writeClasses('background-clip', $background-clip-settings);
+
+}

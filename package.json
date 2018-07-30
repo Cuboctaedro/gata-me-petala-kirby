@@ -1,0 +1,24 @@
+{
+    "name": "kirby-projectstarter",
+    "version": "1.0.0",
+    "main": "index.js",
+    "license": "MIT",
+    "devDependencies": {
+        "autoprefixer": "^8.6.1",
+        "css-loader": "^0.28.11",
+        "file-loader": "^1.1.11",
+        "mini-css-extract-plugin": "^0.4.0",
+        "node-sass": "^4.9.0",
+        "postcss-loader": "^2.1.5",
+        "sass-loader": "^7.0.3",
+        "webpack": "^4.11.1",
+        "webpack-cli": "^3.0.3",
+        "webpack-merge": "^4.1.2"
+    },
+    "scripts": {
+        "serve": "php -S localhost:1234 -t public/",
+        "js": "webpack --config webpack.dev.js",
+        "css" : "node-sass --include-path src/css src/css/style.scss public/assets/css/styles.css",
+        "prod": "webpack --config webpack.prod.js && node-sass --include-path src/css src/css/style.scss public/assets/css/styles.css --output-style compressed"
+    }
+}

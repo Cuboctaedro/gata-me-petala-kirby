@@ -1,0 +1,43 @@
+title: Blog
+pages:
+  template:
+    - article
+options:
+  preview: true
+  status: true
+  template: false
+  url: false
+  delete: true
+files: true
+fields:
+  previewfiles:
+    type: previewfiles
+  tab1:
+    label: Content
+    type:  tabs
+  title:
+    label: Title
+    type:  text
+  intro:
+    extends: plaintext
+    label: Introduction
+  tab2:
+    label: Pages
+    type:  tabs
+  pageindex:
+    label: Pages
+    type: index
+    options: children
+    columns:
+      title: Title
+      intendedTemplate: Type
+      uid: Slug
+  tab3:
+    label: Settings
+    type:  tabs
+  featuredimage:
+    extends: singleimage
+    label: Featured Image
+  summary:
+    extends: plaintext
+    label: Summary

@@ -1,0 +1,21 @@
+title: Widgets
+pages:
+  template:
+    - widget
+options:
+  preview: false
+  status: false
+  template: false
+  url: false
+  delete: false
+files: false
+fields:
+  title:
+    label: Title
+    type:  text
+  pageindex:
+    label: Widgtes
+    type: index
+    options: children
+    columns:
+      title: Title

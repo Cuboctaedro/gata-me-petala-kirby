@@ -1,0 +1,17 @@
+title: Site
+pages:
+  template:
+    - default
+files: true
+fields:
+  previewfiles:
+    type: previewfiles
+  tab1:
+    label: Content
+    type:  tabs
+  title:
+    label: Title
+    type:  text
+  tab2:
+    label: Settings
+    type:  tabs

@@ -1,0 +1,59 @@
+/* EXAMPLE FILE */
+
+// 1. @fontface declarations
+
+// 2. Reset, normalize etc.
+
+@import "resets/sanitize";
+@import "resets/border-box";
+@import "resets/blocks";
+@import "resets/lists";
+
+// 3. Custom settings (copy of defaults.scss)
+
+@import "settings";
+
+// 4. Import base library
+
+@import "atomic-scss/index";
+
+
+// 5. @extend and other styles
+html,
+body {
+    min-height:101%;
+}
+a {
+    text-decoration: none;
+    color: map-get($global-color-values, 'black');
+}
+.visually-hidden {
+	position: absolute !important;
+	clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+	clip: rect(1px, 1px, 1px, 1px);
+	padding:0 !important;
+	border:0 !important;
+	height: 1px !important; 
+	width: 1px !important; 
+	overflow: hidden;
+}
+
+.animate{
+    transition: all .4s cubic-bezier(.65,.05,.36,1);
+}
+
+.breadcrumbs li {
+    &:after {
+        content: "/";
+        padding-left: rem(8px);
+        padding-right: rem(8px);
+    }
+    &:last-child {
+        &:after {
+            content: "";
+            padding-left: 0;
+            padding-right: 0;
+        }
+    }
+}
+
