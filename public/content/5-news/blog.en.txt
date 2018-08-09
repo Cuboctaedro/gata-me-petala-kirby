@@ -1,0 +1,13 @@
+Title: News
+
+----
+
+Contentblocks: 
+
+----
+
+Text: 
+
+----
+
+Scematype: objectlist

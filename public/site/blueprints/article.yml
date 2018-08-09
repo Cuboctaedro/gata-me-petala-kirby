@@ -10,64 +10,24 @@ files: true
 fields:
   previewfiles:
     type: previewfiles
-  tab1:
-    label: Content
-    type:  tabs
   title:
     label: Title
     type:  text
-  contentblocks:
-    label: Content Blocks
-    type: builder
-    help: Use the buttons to add content blocks.
-    fieldsets:
-      text:
-        label: Text
-        snippet: contentblocks/text
-        fields:
-          text: richtext
-      heading:
-        label: Heading
-        snippet: contentblocks/heading
-        fields:
-          title:
-            label: Heading
-            type: text
-      subheading:
-        label: Subeading
-        snippet: contentblocks/subheading
-        fields:
-          title:
-            label: Subheading
-            type: text
-      image:
-        label: Image
-        snippet: contentblocks/image
-        fields:
-          picture: singleimage
-          caption:
-            label: Caption Text
-            type: text
-      video:
-        label: Video
-        snippet: contentblocks/video
-        fields:
-          videolink:
-            label: Link
-            type: url
-          source: videosource
-  tab2:
-    label: Settings
-    type:  tabs
+  line-a:
+    type: line
   featuredimage:
     extends: singleimage
     label: Featured Image
+    translate: false
   date:
     label: Date
     type: date
+    translate: false
   tags:
     label: Tags
     type: tags
-  summary:
-    extends: plaintext
-    label: Summary
+  line-b:
+    type: line
+  text:
+    extends: richtext
+    label: Text

@@ -12,22 +12,33 @@ files: true
 fields:
   previewfiles:
     type: previewfiles
-  tab1:
-    label: Content
-    type:  tabs
   title:
     label: Title
-    type:  text
-  text: richtext
-  tab2:
-    label: Settings
-    type:  tabs
-  featuredimage:
-    extends: singleimage
-    label: Featured Image
-  headertext:
-    label: Header Text
-    type:  text
-  summary:
-    extends: plaintext
-    label: Summary
+    type: text
+  line-b:
+    type: line
+  contentblocks:
+    label: Content Blocks
+    type: builder
+    help: Use the buttons to add content blocks.
+    fieldsets:
+      text:
+        label: Text
+        snippet: contentblocks/text
+        fields:
+          text: richtext
+      heading:
+        label: Heading
+        snippet: contentblocks/heading
+        fields:
+          title:
+            label: Heading
+            type: text
+      image:
+        label: Image
+        snippet: contentblocks/image
+        fields:
+          picture: singleimage
+          caption:
+            label: Caption Text
+            type: text

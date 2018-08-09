@@ -6,5 +6,4 @@
 <section itemprop="description">
     <?= $page->text()->kt(); ?>
 </section>
-<?php snippet('sidebar') ?>
 <?php snippet('footer') ?>

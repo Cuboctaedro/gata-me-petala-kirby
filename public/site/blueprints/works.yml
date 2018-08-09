@@ -1,0 +1,25 @@
+title: Works
+pages: false
+options:
+  preview: true
+  status: true
+  template: false
+  url: false
+  delete: true
+files:
+  sortable: true
+  fields:
+    caption:
+      label: Caption
+      type: text
+fields:
+  previewfiles:
+    type: previewfiles
+  title:
+    label: Title
+    type:  text
+  line-b:
+    type: line
+  text:
+    extends: plaintext
+    label: Text

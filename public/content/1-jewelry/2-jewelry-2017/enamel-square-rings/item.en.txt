@@ -1,0 +1,25 @@
+Title: enamel square
+
+----
+
+Contentblocks: 
+
+----
+
+Type: Earrings
+
+----
+
+Sku: 
+
+----
+
+Price: 
+
+----
+
+Text: 
+
+----
+
+Scematype: CreativeWork

@@ -1,0 +1,57 @@
+title: Item
+pages: false
+options:
+  preview: true
+  status: true
+  template: false
+  url: false
+  delete: true
+files: true
+fields:
+  previewfiles:
+    type: previewfiles
+  title:
+    label: Title
+    type:  text
+  line-a:
+    type: line
+  featuredimage:
+    extends: singleimage
+    label: Featured Image
+  type:
+    label: Item type
+    type: select 
+    options: field
+    field:
+      page: ../../
+      name: itemtypes
+      separator: ,
+    translate: false
+    width: 1/2
+  sold:
+    label: Sold
+    width: 1/2
+    type: checkbox
+    text: Is it sold?
+    default: 0
+    translate: false
+  line-b:
+    type: line
+  sku: 
+    label: Item code
+    type: text
+    width: 1/2
+    translate: false
+  price:
+    label: Price
+    type: number
+    width: 1/2
+    translate: false
+  line-c:
+    type: line
+  text:
+    extends: plaintext
+    label: Text
+  scematype:
+    type: hidden
+    default: CreativeWork

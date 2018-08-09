@@ -1,0 +1,17 @@
+Title: Κοσμήματα
+
+----
+
+Text: 
+
+----
+
+Itemtypes: Rings, Earrings, Necklaces, Bracelets, Objects, Pins
+
+----
+
+Featuredimage: 
+
+----
+
+Scematype: objectlist

@@ -1,0 +1,17 @@
+Title: Slices Bracelet
+
+----
+
+Contentblocks: 
+
+----
+
+Text: 
+
+material: silver 925
+weight: 20.0 g
+dimensions: 10.0 x 7.2 cm
+
+----
+
+Scematype: CreativeWork

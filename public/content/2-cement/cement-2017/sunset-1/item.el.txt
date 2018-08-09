@@ -1,0 +1,33 @@
+Title: ηλιοβασίλεμα 1
+
+----
+
+Contentblocks: 
+
+----
+
+Featuredimage: 53.jpg
+
+----
+
+Type: 
+
+----
+
+Sold: 1
+
+----
+
+Sku: 
+
+----
+
+Price: 
+
+----
+
+Text: Κοκκινο-πορτοκαλί τσιμεντένιο πιάτο
+
+----
+
+Scematype: CreativeWork

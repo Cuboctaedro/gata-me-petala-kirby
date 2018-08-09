@@ -1,0 +1,29 @@
+Title: Flower Pin
+
+----
+
+Contentblocks: 
+
+----
+
+Type: Pins
+
+----
+
+Sku: 238
+
+----
+
+Price: 
+
+----
+
+Text: 
+
+material: silver 925
+weight: 9.1 g
+dimensions: 9.5 x 2.4 cm
+
+----
+
+Scematype: CreativeWork

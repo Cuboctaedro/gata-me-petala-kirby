@@ -1,0 +1,33 @@
+Title: Βερμούδες κόκκινο
+
+----
+
+Contentblocks: 
+
+----
+
+Featuredimage: 45.jpg
+
+----
+
+Type: 
+
+----
+
+Sku: 
+
+----
+
+Price: 
+
+----
+
+Text: Βαθύ κόκκινο τριγωνικό μπωλ από τσιμέντο.
+
+----
+
+Scematype: CreativeWork
+
+----
+
+Sold: 1

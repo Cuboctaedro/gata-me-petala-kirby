@@ -1,4 +1,0 @@
----
-title: Νέα
-layout: news
----

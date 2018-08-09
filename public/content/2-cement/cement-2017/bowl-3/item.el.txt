@@ -1,0 +1,33 @@
+Title: Μικρό γκρί-κόκκινο
+
+----
+
+Contentblocks: 
+
+----
+
+Featuredimage: 51.jpg
+
+----
+
+Type: 
+
+----
+
+Sold: 1
+
+----
+
+Sku: 
+
+----
+
+Price: 
+
+----
+
+Text: Ρηχό δίχρωμο τσιμεντένιο πιατάκι.
+
+----
+
+Scematype: CreativeWork

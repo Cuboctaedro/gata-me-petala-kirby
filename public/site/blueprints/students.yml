@@ -1,0 +1,32 @@
+title: Students
+pages: works
+options:
+  preview: true
+  status: true
+  template: false
+  url: false
+  delete: true
+files: true
+fields:
+  previewfiles:
+    type: previewfiles
+  tab1:
+    label: Categories
+    type:  tabs
+  pageindex:
+    label: Categories
+    type: index
+    options: children
+    columns:
+      title: Title
+  tab3:
+    label: Content
+    type:  tabs
+  title:
+    label: Title
+    type:  text
+  line-b:
+    type: line
+  text:
+    extends: plaintext
+    label: Text

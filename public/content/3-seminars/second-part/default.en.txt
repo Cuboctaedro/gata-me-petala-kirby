@@ -1,0 +1,17 @@
+Title: Second Part
+
+----
+
+Contentblocks: 
+
+- 
+  text: >
+    The seminar program is only available in
+    Greek. If you speak English and wish to
+    follow the seminars please contact us.
+  _fieldset: text
+- 
+  picture: >
+    bangle_making_workshop_07505d42-fd48-4291-a21a-16b518d3e8d2_large.png
+  caption: ""
+  _fieldset: image

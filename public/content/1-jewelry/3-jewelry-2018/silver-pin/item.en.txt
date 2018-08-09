@@ -1,0 +1,25 @@
+Title: Pin
+
+----
+
+Contentblocks: 
+
+----
+
+Type: 
+
+----
+
+Sku: 
+
+----
+
+Price: 
+
+----
+
+Text: Pin, silver 925, patina, wood, enamel
+
+----
+
+Scematype: CreativeWork

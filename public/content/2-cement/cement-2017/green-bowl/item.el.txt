@@ -1,0 +1,36 @@
+Title: Βάτραχος
+
+----
+
+Contentblocks: 
+
+----
+
+Featuredimage: frog.jpg
+
+----
+
+Type: 
+
+----
+
+Sold: 0
+
+----
+
+Sku: 
+
+----
+
+Price: 120
+
+----
+
+Text: 
+
+Βαθύ δίχρωμο πράσινο τσεμεντένιο δοχείο.
+Ύψος: 11 εκ.,  Πλάτος: 24 εκ.
+
+----
+
+Scematype: CreativeWork

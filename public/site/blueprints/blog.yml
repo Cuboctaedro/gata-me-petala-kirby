@@ -10,34 +10,28 @@ options:
   delete: true
 files: true
 fields:
-  previewfiles:
-    type: previewfiles
+  hidebar:
+    type: hidebar
   tab1:
-    label: Content
-    type:  tabs
-  title:
-    label: Title
-    type:  text
-  intro:
-    extends: plaintext
-    label: Introduction
-  tab2:
-    label: Pages
+    label: Articles
     type:  tabs
   pageindex:
     label: Pages
     type: index
     options: children
+    order: desc
     columns:
+      date: Date
       title: Title
-      intendedTemplate: Type
-      uid: Slug
   tab3:
-    label: Settings
+    label: Content
     type:  tabs
-  featuredimage:
-    extends: singleimage
-    label: Featured Image
-  summary:
+  title:
+    label: Title
+    type:  text
+  text:
     extends: plaintext
     label: Summary
+  scematype:
+    type: hidden
+    default: objectlist

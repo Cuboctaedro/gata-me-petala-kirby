@@ -1,0 +1,42 @@
+title: Section
+pages:
+  template:
+    - collection
+options:
+  preview: true
+  status: true
+  template: false
+  url: false
+  delete: true
+files: true
+fields:
+  hidebar:
+    type: hidebar
+  tab1:
+    label: Pages
+    type:  tabs
+  pageindex:
+    label: Collections
+    type: index
+    options: children
+    columns:
+      title: Title
+  tab2:
+    label: Content
+    type:  tabs
+  title:
+    label: Title
+    type:  text
+  text:
+    extends: plaintext
+    label: Text
+  itemtypes:
+    label: Item Types
+    type: text
+    help: Separate types with ,
+  featuredimage:
+    extends: singleimage
+    label: Featured Image
+  scematype:
+    type: hidden
+    default: objectlist

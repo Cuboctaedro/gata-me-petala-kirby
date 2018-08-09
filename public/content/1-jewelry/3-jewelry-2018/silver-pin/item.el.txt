@@ -1,0 +1,29 @@
+Title: Καρφίτσα
+
+----
+
+Contentblocks: 
+
+----
+
+Featuredimage: c.jpg
+
+----
+
+Type: 
+
+----
+
+Sku: 
+
+----
+
+Price: 
+
+----
+
+Text: Καρφίτσα. Ασήμι 925, πατίνα, ξύλο, βερνίκι.
+
+----
+
+Scematype: CreativeWork

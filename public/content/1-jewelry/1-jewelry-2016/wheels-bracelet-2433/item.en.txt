@@ -1,0 +1,17 @@
+Title: Wheels Bracelet
+
+----
+
+Contentblocks: 
+
+----
+
+Text: 
+
+material: silver 925
+weight: 30.0 g
+variable length
+
+----
+
+Scematype: CreativeWork

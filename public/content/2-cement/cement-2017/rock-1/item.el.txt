@@ -1,0 +1,35 @@
+Title: Πέτρα 1
+
+----
+
+Contentblocks: 
+
+----
+
+Featuredimage: 59.jpg
+
+----
+
+Type: 
+
+----
+
+Sold: 1
+
+----
+
+Sku: 
+
+----
+
+Price: 
+
+----
+
+Text: 
+
+Βαρύ ενχάρακτο μπολ σε γκρι-μαύρους χρωματισμούς
+
+----
+
+Scematype: CreativeWork

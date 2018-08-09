@@ -1,0 +1,35 @@
+Title: σάπιο μήλο 1
+
+----
+
+Contentblocks: 
+
+----
+
+Featuredimage: 57.jpg
+
+----
+
+Type: 
+
+----
+
+Sold: 1
+
+----
+
+Sku: 
+
+----
+
+Price: 
+
+----
+
+Text: 
+
+Μεσαίο στρογγυλό μπολ
+
+----
+
+Scematype: CreativeWork

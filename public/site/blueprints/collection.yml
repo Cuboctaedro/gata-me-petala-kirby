@@ -1,0 +1,37 @@
+title: Collection
+pages:
+  template:
+    - item
+options:
+  preview: true
+  status: true
+  template: false
+  url: false
+  delete: true
+files: true
+fields:
+  hidebar:
+    type: hidebar
+  tab1:
+    label: Pages
+    type:  tabs
+  pageindex:
+    label: Items
+    type: index
+    options: children
+    columns:
+      title: Title
+      type: Type
+      sku: Code
+  tab2:
+    label: Content
+    type:  tabs
+  title:
+    label: Title
+    type:  text
+  text:
+    extends: plaintext
+    label: Text
+  scematype:
+    type: hidden
+    default: objectlist

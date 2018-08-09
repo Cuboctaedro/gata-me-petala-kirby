@@ -1,0 +1,20 @@
+title: Home
+pages: false
+options:
+  preview: true
+  status: true
+  template: false
+  url: false
+  delete: true
+files: true
+fields:
+  previewfiles:
+    type: previewfiles
+  title:
+    label: Title
+    type:  text
+  line-b:
+    type: line
+  text:
+    extends: richtext
+    label: Text
