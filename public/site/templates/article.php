@@ -17,7 +17,7 @@
     <meta itemprop="publisher" content="<?= $site->title() ?>">
 
     <div itemprop="articleBody">
-        <?php snippet('contentblocks/index'); ?>
+        <?= $page->text()->kt() ?>
     </div>
 
     <footer>

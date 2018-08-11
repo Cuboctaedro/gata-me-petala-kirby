@@ -24,12 +24,11 @@ $global-hover-identifier       : 'h__' ;
 
 // Colors
 $global-color-values: (
-    'white'         : #ffffff,
-    'black'         : #444444,
-    'main'          : #eeeeee,
-    'gray'          : #999999,
+    'white'         : #f7f6f0,
+    'black'         : #383537,
+    'blue'          : #4f7070,
+    'gray'          : #c9c8bf,
     'red'           : #E03B24,
-    'green'         : #43996F,
     'transparent' : transparent
 );
 
@@ -528,8 +527,7 @@ $global-font-family-settings: (
     'hover'      : false,
     'classname'  : 'ff-',
     'values': (
-        'sans' : unquote('tablet-gothic, "Helvetica Neue", Helvetica, Arial, sans-serif'),
-        'serif' : unquote('abril-text, Georgia, serif'),
+        'sans' : unquote('"Source Sans Pro", sans-serif'),
     )
 );
 /*  =========================================================================

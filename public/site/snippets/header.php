@@ -31,10 +31,11 @@
     <meta name="msapplication-TileColor" content="#ffffff">
     <meta name="msapplication-TileImage" content="<?= $assetsbaseurl; ?>/icons/ms-icon-144x144.png">
     <meta name="theme-color" content="#ffffff">
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&amp;subset=greek" rel="stylesheet">
 
     <?= css('assets/css/styles.css'); ?>
 </head>
-<body itemscope itemtype="http://schema.org/WebPage" class="fw-400 ff-text fs-16 lh-16 c-black bg-white">
+<body itemscope itemtype="http://schema.org/WebPage" class="fw-400 ff-sans fs-16 lh-3 c-black bg-gray pt-10">
     <p class="visually-hidden"><a href="#main">skip to main content</a></p>
 
     <header>
@@ -47,8 +48,11 @@
         </a>
     </header>
 
-    <?php snippet('ui/menu'); ?>
-    <?php snippet('ui/searchform'); ?>
+    <div class="w-full h-6 bg-blue c-white pos-absolute top-0 right-0 left-0 fs-14 tt-upper">
+        <?php snippet('ui/menu'); ?>
+        <!-- <?php snippet('ui/searchform'); ?> -->
+        <?php snippet('ui/languages'); ?>
+    </div>
 
     <main id="main">
 

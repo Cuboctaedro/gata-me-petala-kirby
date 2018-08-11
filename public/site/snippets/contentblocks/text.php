@@ -1,3 +1,3 @@
 <div>
-    <?= $data->text()->kt() ?>
+    <?= $data->text()->excerpt(30, 'words') ?>
 </div>

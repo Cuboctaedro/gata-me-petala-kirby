@@ -4,11 +4,11 @@
     <h1 itemprop="name"><?= $page->title()->html() ?></h1>
 </header>
 
-<section class="d-flex fx-d-row fx-w-wrap" itemscope itemtype="http://schema.org/Blog">
+<section class="d-flex fx-d-row fx-w-wrap" itemscope itemtype="https://schema.org/ItemList">
     <ul>
-        <?php foreach($articles as $item): ?>
+        <?php foreach($page->children() as $item): ?>
         <li>
-            <?php snippet('card', array('item' => $item)); ?>
+            <?php snippet('itemcard', array('item' => $item)); ?>
         </li>
         <?php endforeach; ?>
     </ul>
