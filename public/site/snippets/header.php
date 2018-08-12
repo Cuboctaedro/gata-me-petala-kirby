@@ -31,28 +31,74 @@
     <meta name="msapplication-TileColor" content="#ffffff">
     <meta name="msapplication-TileImage" content="<?= $assetsbaseurl; ?>/icons/ms-icon-144x144.png">
     <meta name="theme-color" content="#ffffff">
-    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&amp;subset=greek" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Alegreya+Sans:400,700&amp;subset=greek" rel="stylesheet">
 
     <?= css('assets/css/styles.css'); ?>
 </head>
-<body itemscope itemtype="http://schema.org/WebPage" class="fw-400 ff-sans fs-16 lh-3 c-black bg-gray pt-10">
+<body itemscope itemtype="http://schema.org/WebPage">
     <p class="visually-hidden"><a href="#main">skip to main content</a></p>
 
-    <header>
-        <a href="<?= $site->url() ?>">
-        <?php if ($page->isHomePage()) : ?>
-            <h1 itemprop="name"><?= $site->title() ?></h1>
+    <nav class="o-bar caps" role="navigation">
+        <ul class="o-nav o-nav--h o-bar__last">
+        <?php foreach($site->languages() as $language): ?>
+        <li>
+            <a href="<?= $page->url($language->code()) ?>" class="<?php e($site->language() == $language, ' active') ?>">
+                <?= html($language->code()) ?>
+            </a>
+        </li>
+        <?php endforeach ?>
+        </ul>
+
+        <button class="o-bar__first o-bar__button js-navbar__toggle none--tab" type="button">Menu</button>
+
+        <?php $menupages = $site->pages()->visible(); ?>
+
+        <ul class="o-nav o-nav--v o-nav--h--tab o-bar__extended js-navbar__toggle-target">
+
+        <?php foreach ($menupages as $item):?>
+        <?php if ($item->hasChildren() && $item->intendedTemplate() != 'blog'): ?>
+
+            <li class="js-dropdown--click">
+                <a href="#" class="js-dropdown__button"><?= $item->title() ; ?></a>
+                <ul class="js-dropdown__target js-dropdown__target--push js-dropdown__target--overlay--tab o-nav o-nav--v o-nav__subnav">
+                    <?php foreach ($item->children() as $sub):?>
+                        <li><a href="<?= $sub->url() ; ?>" class="<?php e($sub->isOpen(), ' active') ?>"><?= $sub->title() ; ?></a></li>
+                    <?php endforeach; ?>
+                </ul>
+            </li>
+
         <?php else: ?>
-            <p><?= $site->title() ?></p>
+
+            <li class="">
+            <a href="<?= $item->url() ; ?>" class="<?php e($item->isOpen(), ' active') ?>"><?= $item->title() ; ?></a>
+            </li>
+
         <?php endif; ?>
-        </a>
-    </header>
+        <?php endforeach; ?>
+        </ul>
+    </nav>
 
-    <div class="w-full h-6 bg-blue c-white pos-absolute top-0 right-0 left-0 fs-14 tt-upper">
-        <?php snippet('ui/menu'); ?>
-        <!-- <?php snippet('ui/searchform'); ?> -->
-        <?php snippet('ui/languages'); ?>
-    </div>
+    <div class="pt-nine">
+        <div class="o-container mb-six">
+            <header id="header" class="o-grid" role="banner">
+            <?php if ($page->isHomePage()): ?>
+                <h1 class="o-grid__cell o-grid__cell--3of4 o-grid__cell--3of8--tab o-grid__cell--3of12--desk">
+                    <a href="<?= $site->url() ?>" class="c-sitelogo fill-white">
+                        <span class="visually-hidden"><?= $site->title() ?></span>
+                        <?php snippet('logo'); ?>
+                    </a>
+                </h1>
+            <?php else: ?>
+                <div class="o-grid__cell o-grid__cell--3of4 o-grid__cell--3of8--tab o-grid__cell--3of12--desk">
+                    <a href="<?= $site->url() ?>" class="c-sitelogo fill-blue">
+                        <span class="visually-hidden"><?= $site->title() ?></span>
+                        <?php snippet('logo'); ?>
+                    </a>
+                </div>
+            <?php endif; ?>
+            </header>
+        </div>
 
-    <main id="main">
+
+    <div id="main">
 
