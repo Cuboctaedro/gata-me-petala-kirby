@@ -9,9 +9,9 @@
 baguetteBox.run('.lightbox-gallery');
 
 document.querySelectorAll('.js-navbar__toggle').forEach(function(item) {
-    item.addEventListener("click", function() {
+    item.onclick = function() {
         document.querySelector('.js-navbar__toggle-target').classList.toggle('is_visible');
-    }, false);
+    }
 });
 
 document.querySelectorAll('.js-dropdown__button').forEach(function(item){
