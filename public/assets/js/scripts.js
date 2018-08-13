@@ -12,7 +12,7 @@ document.getElementById('js-navbar__toggle').onclick = function() {
     document.querySelector('.js-navbar__toggle-target').classList.toggle('is_visible');
 };
 
-document.querySelectorAll('.js-dropdown__button').forEach(function(item){
+Array.from(document.querySelectorAll('.js-dropdown__button')).forEach(function(item){
     item.addEventListener("click", function(){
         var targetElement = item.nextElementSibling;
         var allElements = document.querySelectorAll('.js-dropdown__target');
