@@ -1,5 +1,4 @@
 .DS_Store
 /public/site/accounts
-/public/assets/
 /public/thumbs/*
 /node_modules

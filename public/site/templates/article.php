@@ -1,29 +1,17 @@
 <?php snippet('header') ?>
-<article itemprop="mainEntity" itemscope itemtype="http://schema.org/Article">
 
-    <header>
-        <h1 itemprop="headline"><?= $page->title()->html() ?></h1>
-        <time datetime="<?= $page->date('c') ?>" itemprop="datePublished"><?= $page->date('l F jS, Y') ?></time>
-        <ul>
-            <?php foreach($page->tags()->split(',') as $tag): ?>
-                <li>
-                    <a href="<?= url('blog/' . url::paramsToString(['tag' => $tag])) ?>"><?= html($tag) ?></a>
-                </li>
-            <?php endforeach ?>
-        </ul>
-    </header>
-
-    <meta itemprop="author" content="<?= $site->title() ?>">
-    <meta itemprop="publisher" content="<?= $site->title() ?>">
-
-    <div itemprop="articleBody">
-        <?= $page->text()->kt() ?>
+<main class="main" id="main">
+    <div class="o-container">
+        <article class="o-grid mb-three">
+            <header class="o-grid__cell">
+                <h1 class="fs-giga titlefont mb-three b-top--solid b-hair pt-one"><?= $page->title()->html() ?></h1>
+                <time><?= $page->format_date() ?></time>
+            </header>
+            <div class="s-generated o-grid__cell o-grid__cell--5of8--tab o-grid__cell--6of12--desk"><?= $page->text()->kt() ?></div>
+            <div class="o-grid__cell o-grid__cell--3of8--tab o-grid__cell--6of12--desk">
+            <?php snippet('gallery'); ?>
+            </div>
+        </article>
     </div>
-
-    <footer>
-        <?php snippet('ui/share') ?>
-    </footer>
-
-</article>
-
+</main>
 <?php snippet('footer') ?>

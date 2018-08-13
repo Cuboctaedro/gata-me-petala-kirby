@@ -1,28 +1,16 @@
 <?php snippet('header') ?>
-<article itemprop="mainEntity" itemscope itemtype="http://schema.org/CreativeWork">
 
-    <header>
-        <h1 itemprop="name"><?= $page->title()->html() ?></h1>
-    </header>
-
-    <div itemprop="description">
-        <?= $page->text()->kt() ?>
+<main class="main">
+    <div class="o-container">
+        <article class="o-grid mb-three">
+            <header class="o-grid__cell">
+                <h1 class="fs-giga titlefont mb-three b-top--solid b-hair pt-one"><?= $page->title()->html() ?></h1>
+            </header>
+            <div class="s-generated o-grid__cell o-grid__cell--3of8--tab o-grid__cell--3of12--desk"><?= $page->text()->kt() ?></div>
+            <div class="o-grid__cell o-grid__cell--5of8--tab o-grid__cell--9of12--desk">
+                <?php snippet('gallery') ?>
+            </div>
+        </article>
     </div>
-
-    <ul>
-        <?php foreach ($page->images() as $image): ?>
-            <li>
-                <a href="<?= $image->url(); ?>">
-                    <img src="<?= $image->resize(300, 300)->url() ?>" />
-            </a>
-            </li>
-        <?php endforeach; ?>
-    </ul>
-
-    <footer>
-        <?php snippet('ui/share') ?>
-    </footer>
-
-</article>
-
+</main>
 <?php snippet('footer') ?>

@@ -33,8 +33,8 @@ c::set('languages', array(
       'code'    => 'el',
       'name'    => 'Greek',
       'default' => true,
-      'locale'  => 'el',
-      'url'     => '/',
+      'locale'  => 'el_GR',
+        'url'     => '/',
     ),
     array(
         'code'    => 'en',
@@ -43,7 +43,6 @@ c::set('languages', array(
         'url'     => '/en',
     ),
 ));
-
 
 
 c::set('debug', true);

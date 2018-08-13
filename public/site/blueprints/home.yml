@@ -15,6 +15,10 @@ fields:
     type:  text
   line-b:
     type: line
+  background:
+    extends: singleimage
+    label: Background Image
+    translate: false
   text:
     extends: richtext
     label: Text

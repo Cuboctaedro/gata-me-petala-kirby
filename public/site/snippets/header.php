@@ -2,17 +2,43 @@
 <html lang="<?= site()->language()->code() ?>">
 <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width,initial-scale=1.0">
-
-    <?php snippet('meta') ?>
+    <?php if($page->isHomePage()): ?>
+    <title><?= $site->title() ?></title>
+    <?php else: ?>
+    <title><?= $page->title() ?> - <?= $site->title() ?></title>
+    <?php endif; ?>
+    <meta name="description" content="<?= $page->summary() ?>">
+    <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
     <meta name="robots" content="index, follow" />
-    <meta property="fb:pages" content="" />
+
     <link rel="canonical" href="<?= $page->url() ?>"/>
     <?php foreach($site->languages as $lang): ?>
         <?php if ($lang != site()->language() ): ?>
         <link rel="alternate" hreflang="<?= $lang->code() ?>" href="<?= $page->url($lang->code()) ?>" />
     <?php endif; endforeach; ?>
+    <meta property="og:site_name" content="<?= $site->title() ?>" />
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="<?= $page->url() ?>">
+    <meta property="og:title" content="<?= $page->title() ?>">
+    <meta property="og:description" content="<?= $page->summary() ?>">
+    <?php if ($page->hasImages()):?>
+        <meta property="og:image" content="<?= $page->images()->first()->url() ?>">
+        <meta name="twitter:image" content="<?= $page->images()->first()->url() ?>">
+    <?php endif; ?>
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:url" content="<?= $page->url() ?>">
+    <meta name="twitter:title" content="<?= $page->title() ?>">
+    <meta name="twitter:description" content="<?= $page->summary() ?>">
 
+<?php
+    if ($page->intendedTemplate() == 'default') {
+        snippet('schema/page');
+    } elseif ($page->intendedTemplate() == 'item') {
+        snippet('schema/item');
+    } elseif ($page->intendedTemplate() == 'collection') {
+        snippet('schema/list');
+    }
+?>
     <?php $assetsbaseurl = kirby()->urls()->assets(); ?>
     <link rel="apple-touch-icon" sizes="57x57" href="<?= $assetsbaseurl; ?>/icons/apple-icon-57x57.png">
     <link rel="apple-touch-icon" sizes="60x60" href="<?= $assetsbaseurl; ?>/icons/apple-icon-60x60.png">

@@ -13,6 +13,10 @@ fields:
   title:
     label: Title
     type:  text
+  map:
+    extends: singleimage
+    label: Map Image
+    translate: false
   line-b:
     type: line
   text:
