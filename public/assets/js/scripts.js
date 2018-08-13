@@ -8,11 +8,9 @@
 
 baguetteBox.run('.lightbox-gallery');
 
-document.querySelectorAll('.js-navbar__toggle').forEach(function(item) {
-    item.onclick = function() {
-        document.querySelector('.js-navbar__toggle-target').classList.toggle('is_visible');
-    }
-});
+document.getElementById('js-navbar__toggle').onclick = function() {
+    document.querySelector('.js-navbar__toggle-target').classList.toggle('is_visible');
+};
 
 document.querySelectorAll('.js-dropdown__button').forEach(function(item){
     item.addEventListener("click", function(){

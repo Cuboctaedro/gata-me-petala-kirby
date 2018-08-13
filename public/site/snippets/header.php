@@ -75,7 +75,7 @@
         <?php endforeach ?>
         </ul>
 
-        <button class="o-bar__first o-bar__button js-navbar__toggle none--tab" type="button">Menu</button>
+        <button class="o-bar__first o-bar__button js-navbar__toggle none--tab caps" type="button" id="js-navbar__toggle">Menu</button>
 
         <?php $menupages = $site->pages()->visible(); ?>
 
