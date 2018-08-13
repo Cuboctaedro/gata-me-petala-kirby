@@ -43,6 +43,7 @@ c::set('languages', array(
         'url'     => '/en',
     ),
 ));
+c::set('cachebuster', true);
 
 
 c::set('debug', true);
