@@ -14,8 +14,24 @@
     <?php endif; ?>
     <?php snippet('meta');?>
 
-    <link rel="stylesheet" href="<?= mix('/main.css') ?>">
-
-    <script src="<?= mix('/main.js') ?>" defer></script>
+    <?= mix('/app.css') ?>
 </head>
+
 <body>
+
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <div class="site">
+
+        <div class="site__header navbar">
+            <?php if($page->isHomePage()): ?>
+                <h1 class="navbar__title">
+                    <a href="<?= $site->url() ?>"><?= $site->title() ?></a>
+                </h1>
+            <?php else: ?>
+                <span class="navbar__title"><a href="<?= $site->url() ?>"><?= $site->title() ?></a></span>
+            <?php endif; ?>
+            <?php snippet('nav/single'); ?>
+        </div>
+
+        <main class="site__main" id="main">

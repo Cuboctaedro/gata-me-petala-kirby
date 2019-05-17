@@ -2,7 +2,7 @@ let mix = require('laravel-mix');
 require('laravel-mix-purgecss');
 
 mix.setPublicPath("assets")
-mix.browserSync("kirby-starter.test")
+mix.browserSync("cuboctaedro.test")
 mix
     .sourceMaps()
     .js("src/app.js", "assets")

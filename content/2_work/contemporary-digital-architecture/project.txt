@@ -1,0 +1,27 @@
+Title: Contemporary Digital Architecture
+
+----
+
+Text: 
+
+(columns…)
+
+The book presents the latest developments in the field of architecture as it has been reshaped by the use of digital technologies. Focused in the work of young architects, it presents more than 60 projects and some small essays. For this book I have worked both as editor and designer starting from the initial idea and working on it until it was sent for print. The book has a square, 22 x 22 cm, format and almost 400 pages. The layout is simple and adaptable to the great variety of available material.
+
+++++
+
+The projects selected are mostly small-scale projects done by young architects since the focus of the book was on presenting new and innovative ideas of using technologies that are already available and do not require huge budgets. The material of the book is organized in four chapters (fabrication, scripting, interaction and poetics). There is a small essay for each chapter, a general introduction and an essay by Supermanoeuvre. The book is relatively text-heavy since most of the projects required extensive technical descriptions.
+
+(…columns)
+
+----
+
+Tags: Book Design,Editing
+
+----
+
+Description: Editing and design for a book about the use of digital technologies in contemporary experimental architecture.
+
+----
+
+Projectdate: 2008

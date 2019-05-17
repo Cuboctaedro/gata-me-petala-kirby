@@ -1,0 +1,5 @@
+Title: Web Design and Development
+
+----
+
+Text: I design and develop websites with responsive patterns, using Kirby CMS, Wordpress, Drupal. I have created various artist and designer portfolios, e-shops, news sites and others.

@@ -1,0 +1,31 @@
+Title: The Bridge of Plaka
+
+----
+
+Projectdate: 2017
+
+----
+
+Description: Book about the rebuilding of traditional stone bridge.
+
+----
+
+Text: 
+
+(columns...)
+
+The bridge of Plaka is a traditional stone bridge in north-west Greece. recently it collapsed during a heavy rainfall and flood. Soon afterwards the Technical University of Athens initiated an extensive program of reconstruction. The book presents all the studies that were undertaken before the actual rebuilding. 
+
+++++
+
+This is a very extensive work including everything from the history of the bridge and its importance to the local community to detail studies of its materials and structure. The result is a highly technical and content-heavy book with lots of plans, graphs data tables etc. 
+
+(...columns)
+
+----
+
+Projectlink: 
+
+----
+
+Tags: Book Design

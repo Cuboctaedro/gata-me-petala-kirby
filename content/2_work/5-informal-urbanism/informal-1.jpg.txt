@@ -1,0 +1,5 @@
+Caption: Book Cover
+
+----
+
+Retina: 0

@@ -1,0 +1,27 @@
+Title: Christina Dimitriadis
+
+----
+
+Projectdate: 2010
+
+----
+
+Description: Website for an artist-photographer.
+
+----
+
+Text: 
+
+(columns…)
+
+Christina Dimitriadis is an artist working mostly with photography. Her website presents most of her work plus some texts about her work written by her and others and a bio. We have worked in close collaboration on the design of the website opting for a minimal approach which lets the work speak for itself.
+
+++++
+
+I  developed using the Kirby CMS. You can see the website (link: http://www.christinadimitriadis.com/ text: here popup: yes).
+
+(…columns)
+
+----
+
+Tags: Web design,Web development

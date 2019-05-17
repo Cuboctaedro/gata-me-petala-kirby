@@ -1,0 +1,152 @@
+Title: The Kirby CMS
+
+----
+
+Subtitle: A presentation of the Kirby CMS.
+
+----
+
+Date: 2013-02-18
+
+----
+
+Text: 
+
+The last few weeks I have started working with Kirby, a file-based CMS written on PHP. I have found it very convenient for many kinds of projects. It is a very good solution for small-to-medium sized websites, like portfolios, small blogs or small company sites.
+
+If you had ever thought that the CMS you are using is too big for your project and at the same time too inflexible; if you have started getting bored with plug-ins that don't work and with complex procedures for creating the simplest custom content types then you may want to consider Kirby as an alternative.
+
+What follows is a presentation of how Kirby works that could help you decide if it is suitable for your needs. This is not a complete tutorial on how to use Kirby. You can find excellent tutorials on the Kirby website.
+
+##Installation
+There is not much to say about Kirby's installation, you download the Kirby package, upload it to your root folder and you are ready to go. If you want to run Kirby from a subfolder you will have to add a line of code to the `config.php` file but that's all there is to it. Backing up or moving your site is equally simple, you just copy everything.
+
+##A file-based CMS
+The first thing that differentiates Kirby from popular CMS solutions, like Wordpress or Drupal, is that it has no database. All the content is stored in text files. The text files are organized in folders and the folder structure is identical to the structure of the website.
+
+All the content of the website can be found in the "content" folder. This can be thought of as the base url of the website (mysite.com). Each folder found inside _content_ corresponds to a url and a page. So by creating a folder called "contact" inside content we create `mysite.com/contact` and by creating a folder called "projects" and inside it another folder called "project 1" we create `mysite.com/projects/project-1`.
+
+Each of these folders must contain a text file with the page's content and it can also contain media files like images, or video and text files with meta information related to this media.
+
+The ordering of the folders is done by prefixing their names with a number. So the actual folder names will be something like: `01-projects` and `02-contact`. Any folder without a number prefix will not be visible as a url. This is a simple way for hiding certain pages without deleting them and it is the usual way for creating pages like 404 errors, feeds and sitemaps. The more you work with Kirby the more uses you will find for these invisible folders.
+
+##The text file
+But how is all the content of a page stored in a text file? It is actually very simple; a text file from the default installation of Kirby looks like that:
+
+    Title: Contact
+    ----
+    Text: Leave me alone, I am busy.
+
+The default files contain only _title_ and _text_ but you can easily add any other field:
+
+    Title: Contact
+    ----
+    Subtitle: My contact details
+    ----
+    Text: Leave me alone, I am busy.
+
+You can add as many fields as you like with as much text as you need in each one.
+
+##Templates
+How do you display these fields once you created them? You will have to create a new template since the default template only displays _title_ and _text_. To assign a template to a page you simply give the same filename to the template and the page's text file. When you install Kirby all text files for all pages are called `default.txt` and the only template available in the _templates_ folder is called `default.php` and looks like that:
+
+     <article>
+      <h1><?php echo html($page->title()) ?></h1>
+      <?php echo kirbytext($page->text()) ?>
+     </article>
+
+To display your subtitle in your contact page you will have to rename that page's text file to `contact.txt` and then create a template file called `contact.php` that could be something like:
+
+     <article>
+      <h1><?php echo html($page->title()) ?></h1>
+      <h2><?php echo html($page->subtitle()) ?></h2>
+      <?php echo kirbytext($page->text()) ?>
+     </article>
+
+This thing inside the PHP tags that looks more like jQuery than PHP is the real Kirby magic.
+
+##All your site in three variables?
+There are three variables in Kirby that help you access all your content, `$site`, `$pages` and `$page`.
+
+`$site` contains all site-relevant information. By default it contains the site's title, description, author, keywords and copyright but you can easily add more information.
+
+`$pages` contains all your (first level) pages in an array and it is the usual starting point for transversing your site's contents and create menus and content lists with `foreach` loops.
+
+`$page` is the variable that contains all the information about the current page. All content fields in the page can be accessed through $page like we did before with the simple syntax `$page->subtitle()`.
+
+But the Kirby API offers you many more ways of interacting with `$page` and `$pages`. For example by doing this: `$page->children()`, you get an array of all the child pages of the current page.
+
+It is very simple (so simple it may confuse you at the beginning) to move between an `$page` variable that contains data for one page and an `$pages` variable containing an array of pages. Consider this for example: `$page->children()->first()`. We start from the current page, with `children()` we get an array of all the children pages of the current page and then with `first()` we get the first of the children so that we can actually write: `$page->children()->first()->title()` to get the title field of the first child of the current page.
+
+The Kirby API offers many methods for working with these variables. Together with the jQuery-like intuitive syntax they make it very easy to get anything you want in your templates.
+
+There are also the `$file` and `$image` variables for working with files. These have their own methods that offer all you need when working with files.
+
+##The backend
+It is quite easy to use Kirby without a backend, by uploading content trough FTP and editing text files on any text editor. For many people this can be the preferred solution. Nevertheless, you may be working for a client who is unfamiliar with FTP and more used to work with a CMS like Wordpress with a proper backend. In that case you can install the Kirby panel which is a proper backend that allows to add, delete, restructure and edit content and to upload media files.
+
+Installing the panel and creating an account is very easy. The most important thing you have to do about the panel is to create blueprints for your custom content types. By default the edit screen for a page gives you access to the _title_ and _text_ fields. If you have added new fields (like the subtitle that we used before) you will have to create a new file for the edit screen of this content type, this file is called a blueprint. The default blueprint looks like that:
+
+    title: Page
+    pages: true
+    files: true
+    fields:
+     title:
+       label: Title
+       type: text
+     text:
+      label: Text
+      type: textarea
+      size: large
+
+The blueprint has a title, it defines whether it is possible to have child pages and files on the pages using the blueprint and which fields does the page use. For our contact page we would ave to create a new blueprint and name it `contact.php`. It would be something like this:
+
+    title: Contact
+    pages: true
+    files: true
+    fields:
+     title:
+       label: Title
+       type: text
+     subtitle:
+       label: Subtitle
+       type: text
+     text:
+      label: Text
+      type: textarea
+      size: large
+
+This will create an edit screen for the contact page with a text field for the subtitle.
+
+You are not limited to text fields and text areas; Kirby offers you the possibility to include dates, tags, checkboxes, select boxes and radio buttons. All these are customizable, you can name them as you like, add help texts, predefine options and default states and for textareas you can even add basic formating buttons for bold, italic and links.
+
+##What about navigation?
+Kirby does not have any special menu or widget system. Such needs are covered by snippets, bits of PHP code that can be called from specific points in your template as PHP includes. to understand them take a look at the complete default template:
+
+    <?php snippet('header') ?>
+    <?php snippet('menu') ?>
+    <?php snippet('submenu') ?>
+
+    <section class="content">
+
+      <article>
+        <h1><?php echo html($page->title()) ?></h1>
+        <?php echo kirbytext($page->text()) ?>
+      </article>
+
+    </section>
+
+    <?php snippet('footer') ?>
+
+The `snippet('header')` is an include that loads the `header.php` file from the snippets folder. This file as you can imagine is the header part of your templates.
+
+You can have as many snippets as you like and load them from any part of your template. You can even load a snippet from within another snippets and pass custom variables to any snippets you load (the default variables like $page and $pages are available to all snippets). That way you can create your own navigation blocks or widgets and use them wherever you like. The good news is that you don't have to create so many since quite a lot of the work has already been done and can be found at the Kirby website.
+
+The Kirby site contains material to help you create the following with great ease: menus, submenus, tree menus, tag clouds, pagination, previous/next links, feeds, sitemaps, search, image thumbnails, image galleries, and language switchers (did I forgot to mention that Kirby has the simplest way of managing multilingual content that I have ever seen?).
+
+##When not to use Kirby
+Having said all that I have to admit that still Kirby is not the solution to all your troubles. It may not be the best solution for an ever-growing (and fast-growing) website since you may loose track of where is what in the folder structure. It is not the best solution if you need complex taxonomies, although its tag system combined with a cleverly organized use of the folder system can go quite a long way - try it before you discard it. Also Kirby is (still) quite limited in its handling of registered users. It does have a good way to handle front-end authentication that will do for some uses but not for all.
+
+Another thing some people may find missing is a full-featured back-end WYSIWYG editor. Kirby works with the markdown syntax and even when you use buttons in the textarea you don't see the formated text as you type. I have no problem at all with this since from my experience many people run berserk when they have a WYSIWYG editor cluttering their content with useless markup.
+
+Brevity and clarity are the essence of Kirby from my point of view. As a developer, it gives you all the tools you need and nothing more, letting you maintain your code lean, effective and quite readable. In most cases it does the same for the site's administrator and author, "forcing" them to maintain well-organized and clear content.

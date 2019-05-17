@@ -1,0 +1,28 @@
+Title: Christina Katsari
+
+----
+
+Text: 
+
+(columns…)
+
+Christina Katsari is an illustrator working on storyboards, animation and advertisement illustration. This is her portfolio website. The projects are separated in three categories according to format. The presentation in each case adapts to the projects format. The rest of the site is simple with an introductory home page and a bio. 
+
+++++
+
+The site is made using the Kirby CMS and is responsive, adapting its layout for desktop, laptop, tablet and phone.
+Visit the website: (link: http://www.christinakatsari.com text: Christina Katsari popup: yes)
+
+(…columns)
+
+----
+
+Description: Design and development of a website for an artist.
+
+----
+
+Tags: Web design,Web development
+
+----
+
+Projectdate: 2013
