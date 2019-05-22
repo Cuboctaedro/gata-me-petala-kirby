@@ -13,17 +13,19 @@
         <?php endforeach; ?>
     <?php endif; ?>
     <?php snippet('meta');?>
+    <link rel="stylesheet" href="https://use.typekit.net/ytb8mdx.css">
+    <link href="https://fonts.googleapis.com/css?family=Alegreya+Sans:400,400i,900&display=swap&subset=greek" rel="stylesheet">
 
     <?= mix('/app.css') ?>
 </head>
 
-<body>
+<body class="ff-sans fs-16 lh-150">
 
     <a class="skip-link" href="#main">Skip to content</a>
 
     <div class="site">
 
-        <div class="site__header navbar">
+        <div class="site__header navbar xl__container">
             <?php if($page->isHomePage()): ?>
                 <h1 class="navbar__title">
                     <a href="<?= $site->url() ?>"><?= $site->title() ?></a>

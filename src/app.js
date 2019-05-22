@@ -55,4 +55,4 @@ function toggleTarget(toggleAttr, targetClasses, selfClasses) {
     });
 }
 
-// toggleTarget('data-toggle-panel', ['block', 'hidden'], ['is-active']);
+toggleTarget('data-toggle-target', ['show'], ['is-active']);
