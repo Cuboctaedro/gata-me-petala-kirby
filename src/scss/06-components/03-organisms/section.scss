@@ -1,0 +1,62 @@
+.section {
+    margin-bottom: rem(24);
+    @include mq('md') {
+        margin-bottom: rem(48);
+    }
+
+    &__header {
+        margin-bottom: rem(24);
+        @include mq('md') {
+            margin-bottom: rem(48);
+        }
+    }
+
+    &__content,
+    &__list {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .services &__list {
+        @include mq('xl') {
+            width: 75%;
+            margin-left: 25%;
+        }
+    }
+    .services &__listitem {
+        width:100%;
+        @include mq('md') {
+            width: 50%;
+        }
+        @include mq('lg') {
+            width: 33.33%;
+        }
+    }
+
+    &.projects &__list {
+        @include mq('xl') {
+            width: 75%;
+        }
+    }
+    &.projects &__listitem {
+        width:100%;
+        @include mq('sm') {
+            width: 50%;
+        }
+        @include mq('lg') {
+            width: 33.33%;
+        }
+    }
+    .projects__nav {
+        width:100%;
+        @include mq('xl') {
+            width: 25%;
+        }
+    }
+
+    .blog &__listitem {
+        width:100%;
+    }
+
+}

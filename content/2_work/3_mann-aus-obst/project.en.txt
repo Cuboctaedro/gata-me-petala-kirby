@@ -1,0 +1,43 @@
+Title: Mann Aus Obst
+
+----
+
+Projectdate: 2018
+
+----
+
+Text: 
+
+(columns...)
+
+Mann Aus Obst are a group of avant-garde musicians, performers and artists based in Berlin. Their performances combine music, singing and theater.
+
+++++
+
+Their website presents their projects/plays in detailed presentations, all ensemble members, performance dates and audiovisual samples of their work. The design was done in collaboration with (link: http://www.melgrafik.de/ text: Melgrafik target: _blank) and development by me.
+
+(...columns)
+
+----
+
+Projectlink: http://mannausobst.eu/
+
+----
+
+Gallery: 
+
+----
+
+Tags: Web design, Web development
+
+----
+
+Description: Website for a music-theater group
+
+----
+
+Featuredimage: 
+
+----
+
+Authortwitter: 

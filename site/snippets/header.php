@@ -13,8 +13,11 @@
         <?php endforeach; ?>
     <?php endif; ?>
     <?php snippet('meta');?>
-    <link rel="stylesheet" href="https://use.typekit.net/ytb8mdx.css">
-    <link href="https://fonts.googleapis.com/css?family=Alegreya+Sans:400,400i,900&display=swap&subset=greek" rel="stylesheet">
+
+    <?php
+    // snippet('fontscript');
+    ?>
+    <link href="https://fonts.googleapis.com/css?family=Exo+2:400,400i,900&display=swap" rel="stylesheet">
 
     <?= mix('/app.css') ?>
 </head>
@@ -25,13 +28,13 @@
 
     <div class="site">
 
-        <div class="site__header navbar xl__container">
+        <div class="site__header navbar md__container gutter">
             <?php if($page->isHomePage()): ?>
-                <h1 class="navbar__title">
+                <h1 class="navbar__title gutter">
                     <a href="<?= $site->url() ?>"><?= $site->title() ?></a>
                 </h1>
             <?php else: ?>
-                <span class="navbar__title"><a href="<?= $site->url() ?>"><?= $site->title() ?></a></span>
+                <span class="navbar__title gutter"><a href="<?= $site->url() ?>"><?= $site->title() ?></a></span>
             <?php endif; ?>
             <?php snippet('nav/single'); ?>
         </div>

@@ -1,3 +1,3 @@
-<div class="generated pt-16 px-24">
+<div class="">
     <?= $block->text()->kt() ?>
 </div>

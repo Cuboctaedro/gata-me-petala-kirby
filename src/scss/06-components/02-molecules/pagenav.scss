@@ -1,0 +1,30 @@
+.pagenav {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    padding-bottom: rem(4);
+    @include typesize(14, 24);
+    text-transform: uppercase;
+    &__list {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+    }
+    &__item a {
+        display: flex;
+        align-items: center;
+        margin-left: rem(24);
+        color: map-get($colors, 'grey');
+        & svg {
+            fill: map-get($colors, 'grey');
+            width: rem(18);
+            height: rem(18);
+        }
+        &:hover {
+            color: map-get($colors, 'red');
+            & svg {
+                fill: map-get($colors, 'red');
+            }
+        }
+    }
+}

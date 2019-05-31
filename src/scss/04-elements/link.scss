@@ -1,0 +1,8 @@
+a {
+    color: map-get($colors, 'grey-dark');
+    text-decoration: none;
+    transition: color 0.5s ease-in-out;
+    &:hover {
+        color: map-get($colors, 'red');
+    }
+}

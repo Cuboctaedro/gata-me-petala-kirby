@@ -6,16 +6,14 @@
 }
 
 
-.grid--gutter {
+.gutter {
     padding-left: rem(map-get($gutter, 'base') / 2);
     padding-right: rem(map-get($gutter, 'base') / 2);
-    margin-bottom: rem(map-get($gutter, 'base') );
     @each $key, $val in $media-queries {
         @if map-get($gutter, $key) {
             @include mq($key) {
                 padding-left: rem(map-get($gutter, $key) / 2);
                 padding-right: rem(map-get($gutter, $key) / 2);
-                margin-bottom: rem(map-get($gutter, $key) );
             }
         }
     }

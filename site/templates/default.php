@@ -1,25 +1,15 @@
-<?php
-$services = $site->find('services');
-if($page->parent() == $services) {
-    go($page->parent());
-} else {
-?>
-
 <?php snippet('header') ?>
 
-<article class="page">
-    <header class="page__header">
-        <h1 class="page__title"><?= $page->title()->html() ?></h1>
+<article class="section page md__container gutter">
+    <header class="section__header page__header gutter">
+        <h1 class="page__title heading-1"><?= $page->title()->html() ?></h1>
     </header>
 
-    <div class="page__text">
-        <?php foreach($page->contentblocks()->toBuilderBlocks() as $block): ?>
-            <?php snippet('blocks/' . $block->_key(), array('block' => $block)) ?>
-        <?php endforeach ?>
+    <div class="page__text gutter generated">
+        <?= $page->text()->kt() ?>
     </div>
 
 </article>
 
 
-<?php snippet('footer');
-}; ?>
+<?php snippet('footer'); ?>

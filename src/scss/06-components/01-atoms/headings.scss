@@ -1,11 +1,13 @@
 @mixin heading-1 {
-    font-family: map-get($font-families, 'titles');
-    font-weight: 400;
-    color: map-get($colors, 'green');
-    @include typesize(24, 24);
+    font-family: map-get($font-families, 'sans');
+    font-weight: 900;
+    color: map-get($colors, 'red');
+    @include typesize(21, 24);
     @include mq('lg') {
-        @include typesize(36, 36);
+        @include typesize(24, 32);
     };
+
+    border-top: 1px solid map-get($colors, 'red');
 }
 
 .heading-1 {
@@ -13,39 +15,21 @@
 }
 
 
-@mixin heading-2 {
-    font-family: map-get($font-families, 'titles');
-    font-weight: 400;
-    color: map-get($colors, 'green');
-    @include typesize(24, 32);
-}
-
-.heading-2 {
-    @include heading-2;
-}
 
 @mixin heading-3 {
-    font-family: map-get($font-families, 'titles');
-    font-weight: 600;
-    @include typesize(20, 24);
-    @include mq('lg') {
-        @include typesize(24, 36);
+    font-weight: 900;
+    @include typesize(16, 24);
+    @include mq('md') {
+        @include typesize(18, 24);
     };
 }
 
 .heading-3 {
     @include heading-3;
-}
-
-@mixin heading-4 {
-    font-family: map-get($font-families, 'titles');
-    font-weight: 600;
-    @include typesize(18, 24);
-    @include mq('md') {
-        @include typesize(20, 24);
-    };
-}
-
-.heading-4 {
-    @include heading-4;
+    & a {
+        color: map-get($colors, 'black');
+        &:hover {
+            color: map-get($colors, 'red');
+        }
+    }
 }

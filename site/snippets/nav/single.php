@@ -3,7 +3,7 @@ $items = $site->pages()->listed();
 if($items->isNotEmpty()):
 ?>
 
-<nav class="navbar__nav">
+<nav class="navbar__nav gutter">
     <button class="navbar__button" data-toggle-target="#main-menu">
         <?php snippet('icons/burger'); ?>
         <span class="visually-hidden">Menu</span>

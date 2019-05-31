@@ -12,8 +12,8 @@ tabs:
                 content:
                     type: fields
                     fields:
-                        contentblocks:
-                            extends: fields/blocks
+                        text:
+                            extends: fields/fulleditor
 
           - width: 1/3
             sections:

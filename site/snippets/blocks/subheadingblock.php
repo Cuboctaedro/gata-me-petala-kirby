@@ -1,1 +1,1 @@
-<h3 class="font-titles font-normal pt-16 px-24 text-xl"><?= $block->subheading() ?></h3>
+<h3 class="fw-900 c-grey pt-16 "><?= $block->subheading() ?></h3>

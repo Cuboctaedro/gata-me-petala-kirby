@@ -1,0 +1,29 @@
+title: Contact Page
+
+tabs:
+    content:
+        label:
+            en: Content
+            el: Περιεχόμενο
+        icon: text
+        columns:
+          - width: 2/3
+            sections:
+                content:
+                    type: fields
+                    fields:
+                        contactblocks:
+                            type: structure
+                            label: Contact blocks
+                            fields:
+                                title:
+                                    label: Title
+                                    type: text
+                                text:
+                                    label: Text
+                                    type: textarea
+          - width: 1/3
+            sections:
+                pagefiles:
+                    extends: sections/pagefiles
+    seo: tabs/seo

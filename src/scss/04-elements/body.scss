@@ -1,10 +1,11 @@
 body {
     padding: 0 rem(4);
     margin: 0;
-    border: 4px solid map-get($colors, 'grey-light');
+    border: 4px solid map-get($colors, 'white');
+    background-color: map-get($colors, 'grey-light');
     @include mq('sm') {
         padding: 0 rem(8);
-        border: rem(8) solid map-get($colors, 'grey-light');
+        border: rem(8) solid map-get($colors, 'white');
     }
     @include mq('md') {
         padding: 0 rem(16);

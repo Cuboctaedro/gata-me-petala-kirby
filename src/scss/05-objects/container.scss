@@ -1,16 +1,18 @@
 .container {
+    margin-left: auto;
+    margin-right: auto;
     width: 100%;
     @include mq('sm') {
-        width: rem(map-get($media-queries, 'sm'));
+        width: rem(map-get($media-queries, 'sm') - 24px );
     }
     @include mq('md') {
-        width: rem(map-get($media-queries, 'md'));
+        width: rem(map-get($media-queries, 'md') - 48px);
     }
     @include mq('lg') {
-        width: rem(map-get($media-queries, 'lg') - 24px);
+        width: rem(map-get($media-queries, 'lg') - 48px);
     }
     @include mq('xl') {
-        width: rem(map-get($media-queries, 'xl') - 24px);
+        width: rem(map-get($media-queries, 'xl') - 48px);
     }
 }
 
@@ -24,13 +26,13 @@
     margin-right: auto;
     width: 100%;
     @include mq('md') {
-        width: rem(map-get($media-queries, 'md'));
+        width: rem(map-get($media-queries, 'md') - 48px);
     }
     @include mq('lg') {
-        width: rem(map-get($media-queries, 'lg') - 24px);
+        width: rem(map-get($media-queries, 'lg') - 48px);
     }
     @include mq('xl') {
-        width: rem(map-get($media-queries, 'xl') - 24px);
+        width: rem(map-get($media-queries, 'xl') - 48px);
     }
 }
 .lg__container {
@@ -38,10 +40,10 @@
     margin-right: auto;
     width: 100%;
     @include mq('lg') {
-        width: rem(map-get($media-queries, 'lg') - 24px);
+        width: rem(map-get($media-queries, 'lg') - 48px);
     }
     @include mq('xl') {
-        width: rem(map-get($media-queries, 'xl') - 24px);
+        width: rem(map-get($media-queries, 'xl') - 48px);
     }
 }
 
@@ -50,6 +52,6 @@
     margin-right: auto;
     width: 100%;
     @include mq('xl') {
-        width: rem(map-get($media-queries, 'xl') - 24px);
+        width: rem(map-get($media-queries, 'xl') - 48px);
     }
 }
