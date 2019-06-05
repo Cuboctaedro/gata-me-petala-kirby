@@ -1,5 +1,0 @@
-Caption: Homepage
-
-----
-
-Retina: 0

@@ -1,0 +1,36 @@
+Title: Contact
+
+----
+
+Contactblocks: 
+
+- 
+  title: e-mail
+  text: info@cuboctaedro.eu
+- 
+  title: Phone
+  text: +30 6932 00 1313
+- 
+  title: Post Address
+  text: |
+    Dimitris Kottas
+    Lomvardou 23-25
+    11473, Athens
+    Greece
+- 
+  title: ""
+  text: |
+    © 2018 Dimitris Kottas
+    Made with (link: https://getkirby.com/ text: Kirby target: blank)
+
+----
+
+Description: 
+
+----
+
+Featuredimage: 
+
+----
+
+Authortwitter: 

@@ -1,0 +1,40 @@
+Title: Self-initiated
+
+----
+
+Projectdate: 2000-2019
+
+----
+
+Text: This is a selection of small projects I have made for family, friends or just as personal experiments.
+
+----
+
+Projectlink: 
+
+----
+
+Gallery: 
+
+- calendar-2009.jpg
+- calendar-2010.jpg
+- espoo.jpg
+- monsters.jpg
+
+----
+
+Tags: Graphic Design
+
+----
+
+Description: Personal projects
+
+----
+
+Featuredimage: 
+
+- calendar-2009.jpg
+
+----
+
+Authortwitter: 

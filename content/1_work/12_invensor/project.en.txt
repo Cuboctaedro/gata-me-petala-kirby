@@ -1,0 +1,42 @@
+Title: Invensor
+
+----
+
+Projectdate: 2017
+
+----
+
+Text: 
+
+Invensor is a company that creates adsorption coolers. This a little-known technology with a broad field of applications. Therefore their website is very content-heavy with product presentations, technological explanations and case studies.
+
+The website was designed in collaboration with [Melgrafik](http://melgrafik.de/). It was made using WordPress since the people at Invensor were more familiar with it and they wanted to be able to manage the website by themselves.
+
+----
+
+Projectlink: http://invensor.com/
+
+----
+
+Gallery: 
+
+- invensor-home.jpg
+- invensor-page.jpg
+
+----
+
+Tags: Web design, Web development
+
+----
+
+Description: Website for a company that makes cooling systems
+
+----
+
+Featuredimage: 
+
+- invensor-home.jpg
+
+----
+
+Authortwitter: 

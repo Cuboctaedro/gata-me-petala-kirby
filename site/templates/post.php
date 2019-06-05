@@ -1,13 +1,13 @@
 <?php snippet('header') ?>
 
-<article class="section page md__container gutter">
+<article class="container gutter">
     <?php snippet('nav/page') ?>
-    <header class="section__header page__header gutter">
-        <h1 class="page__title heading-1"><?= $page->title()->html() ?></h1>
-        <time class="page__date" datetime="<?= $page->date() ?>"><?= $page->date()->toDate('F jS, Y') ?></time>
+    <header class="gutter">
+        <h1 class=" heading-1"><?= $page->title()->html() ?></h1>
+        <time class="block italic mb-12" datetime="<?= $page->date() ?>"><?= $page->date()->toDate('F jS, Y') ?></time>
     </header>
 
-    <div class="page__text gutter generated">
+    <div class="lg:w-2/3 xl:w-1/2 xl:mx-auto gutter generated pb-12">
         <?= $page->text()->kt() ?>
     </div>
 

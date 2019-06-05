@@ -1,0 +1,42 @@
+Title: Archiphos
+
+----
+
+Projectdate: 2017
+
+----
+
+Text: 
+
+This is the commercial portfolio of Christina Dimitriadis in her work as architectural photographer. It presents various series of photographs of buildings and interiors with only the barest commentary and info.
+
+I have worked together with Christina for the design of the website. The website is made using the Hugo static site generator.
+
+----
+
+Projectlink: http://archiphos.com/
+
+----
+
+Gallery: 
+
+- archiphos-home.jpg
+- archiphos-page.jpg
+
+----
+
+Tags: Web design, Web development
+
+----
+
+Description: Website for an architectural photographer.
+
+----
+
+Featuredimage: 
+
+- archiphos-home.jpg
+
+----
+
+Authortwitter: 

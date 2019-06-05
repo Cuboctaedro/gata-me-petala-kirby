@@ -1,11 +1,11 @@
 <?php snippet('header') ?>
 
-<article class="section page md__container gutter">
-    <header class="section__header page__header gutter">
-        <h1 class="page__title heading-1"><?= $page->title()->html() ?></h1>
+<article class="container gutter">
+    <header class="gutter mb-12">
+        <h1 class=" heading-1"><?= $page->title()->html() ?></h1>
     </header>
 
-    <div class="page__text gutter generated">
+    <div class="lg:w-2/3 xl:w-1/2 xl:mx-auto gutter generated pb-12">
         <?= $page->text()->kt() ?>
     </div>
 

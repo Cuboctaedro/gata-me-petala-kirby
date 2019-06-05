@@ -1,53 +1,86 @@
 <?php snippet('header') ?>
 
-<article class="section page md__container gutter">
+<article class="container gutter">
     <?php snippet('nav/page') ?>
-    <header class="section__header page__header gutter">
-        <h1 class="page__title heading-1"><?= $page->title()->html() ?></h1>
+    <header class="gutter w-full mb-12">
+        <h1 class="heading-1"><?= $page->title()->html() ?></h1>
 
     </header>
 
-    <div class="page__grid flex flex-row flex-wrap">
+    <div class="flex flex-row flex-wrap w-full">
 
-        <div class=" w-full xl__w-1-4 lg__flex xl__block">
-            <ul class="mb-32 gutter lg__w-1-3 xl__w-full">
-                <li>
-                    <span class="credits__label">Description: </span><span class="credits__value"><?= $page->description() ?></span>
-                </li>
-                <li>
-                    <span class="credits__label">Year: </span><time class="credits__value" datetime="<?= $page->projectdate() ?>"><?= $page->projectdate() ?></time>
-                </li>
-                <li>
-                    <span class="credits__label">Tags: </span>
-                    <ul class="taglist ">
-                        <?php foreach ($page->tags()->split(',') as $tag): ?>
-                            <li><a href="<?= $page->parent()->url() ?>/tag/<?= Str::kebab($tag) ?>" ><?= $tag ?></a></li>
-                        <?php endforeach; ?>
-                    </ul>
-                </li>
-                <?php if($page->projectlink()->exists() && $page->projectlink()->isNotEmpty()): ?>
+        <div class="w-full xl:w-1/4 lg:flex xl:block mb-12">
+
+            <div class="gutter lg:w-1/3 xl:w-full">
+
+                <ul class="mb-8 font-serif">
                     <li>
-                        <span class="credits__label">Website link: </span><a href="<?= $page->projectlink() ?>" class="credits__value"  target="_blank"><?= $page->title() ?></a>
+                        <span class="italic">Description: </span><span class="credits__value"><?= $page->description() ?></span>
                     </li>
+                    <li>
+                        <span class="italic">Year: </span><time class="credits__value" datetime="<?= $page->projectdate() ?>"><?= $page->projectdate() ?></time>
+                    </li>
+                    <li>
+                        <span class="italic">Tags: </span>
+                        <ul class="inline">
+                            <?php foreach ($page->tags()->split(',') as $tag): ?>
+                                <li class="inline tag"><a href="<?= $page->parent()->url() ?>/tag/<?= Str::kebab($tag) ?>" ><?= $tag ?></a></li>
+                            <?php endforeach; ?>
+                        </ul>
+                    </li>
+                </ul>
+
+                <?php if($page->projectlink()->exists() && $page->projectlink()->isNotEmpty()): ?>
+                    <div class="mb-8">
+                        <a href="<?= $page->projectlink() ?>" class="inline-block text-sm uppercase tracking-wider px-4 py-2 bg-gray-900 text-gray-100 hover:bg-red-700 hover:text-gray-100"  target="_blank" title="Visit: <?= $page->title() ?>">Visit the website</a>
+                    </div>
                 <?php endif; ?>
-            </ul>
-            <div class="generated gutter lg__w-2-3 xl__w-full">
-                <?= $page->text()->kt() ?>
+
             </div>
 
+            <div class=" gutter lg:w-2/3 xl:w-full generated">
+                <?= $page->text()->kt() ?>
+            </div>
 
         </div>
 
         <?php if($page->imagegallery() != false): ?>
-            <div class="page__gallery gutter w-full xl__w-3-4">
+            <div class="gutter w-full xl:w-3/4">
                 <ul>
                     <?php foreach($page->imagegallery() as $pic): ?>
                         <li>
-                            <figure class="mb-48">
-                                <img src="<?= $pic->url() ?>" class="block w-full" />
-                                <figcaption class="w-full border-top fs-14 fs-italic">
+                            <figure class="mb-12">
+                                <picture>
+                                    <source media="(max-width: 479px)" data-srcset="<?= $pic->thumb([
+                                        'width'      => 415,
+                                        'quality'    => 80,
+                                    ])->url() ?>">
+                                    <source media="(max-width: 767px)" data-srcset="<?= $pic->thumb([
+                                        'width'      => 432,
+                                        'quality'    => 80,
+                                    ])->url() ?>">
+                                    <source media="(max-width: 1023px)" data-srcset="<?= $pic->thumb([
+                                        'width'      => 720,
+                                        'quality'    => 80,
+                                    ])->url() ?>">
+                                    <source media="(max-width: 960px)" data-srcset="<?= $pic->thumb([
+                                        'width'      => 960,
+                                        'quality'    => 80,
+                                    ])->url() ?>">
+                                    <source media="(min-width: 1280px)" data-srcset="<?= $pic->thumb([
+                                        'width'      => 904,
+                                        'quality'    => 80,
+                                    ])->url() ?>">
+                                    <img data-src="<?= $pic->thumb([
+                                        'width'      => 960,
+                                        'quality'    => 80,
+                                    ])->url() ?>" class="lazyload block w-full bg-gray-100" alt="<?= $page->title() ?> - <?= $pic->caption() ?>" >
+                                </picture>
+                                <?php if($pic->caption()->isNotEmpty()): ?>
+                                <figcaption class="w-full text-gray-600 text-sm italic">
                                     <?= $pic->caption() ?>
                                 </figcaption>
+                            <?php endif; ?>
                             </figure>
 
                         </li>

@@ -1,5 +1,0 @@
-Caption: Second Part
-
-----
-
-Retina: 0

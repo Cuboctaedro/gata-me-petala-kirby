@@ -1,0 +1,5 @@
+Caption: Event page
+
+----
+
+Template: image

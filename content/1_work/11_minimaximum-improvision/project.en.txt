@@ -1,0 +1,42 @@
+Title: Minimaximum Improvision
+
+----
+
+Projectdate: 2017
+
+----
+
+Text: 
+
+MiniMaximum improVision are musicians, architects and visual artists that work on narrative concepts, using acoustic and electric instruments, sampled sounds, voices, texts, objects and images.
+
+Their website presents audio samples of their work and extensive presentations of concerts and events. It has been made using the Metalsmith static site generator.
+
+----
+
+Projectlink: https://www.minimaximum.gr/
+
+----
+
+Gallery: 
+
+- minimaximum-home.jpg
+- minimaximum-page.jpg
+
+----
+
+Tags: Web design, Web development
+
+----
+
+Description: A website for a group of improvisational music.
+
+----
+
+Featuredimage: 
+
+- minimaximum-home.jpg
+
+----
+
+Authortwitter: 

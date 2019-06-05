@@ -1,3 +1,5 @@
+import 'lazysizes';
+
 function addClass(el, className) {
     if (el.classList) {
         el.classList.add(className);
@@ -55,4 +57,23 @@ function toggleTarget(toggleAttr, targetClasses, selfClasses) {
     });
 }
 
-toggleTarget('data-toggle-target', ['show'], ['is-active']);
+
+function toggleMenu() {
+    var togglesArray = Array.from(document.querySelectorAll('[data-toggle-menu]'));
+    togglesArray.forEach(function(item) {
+
+        item.addEventListener(
+            'click',
+            function(event) {
+                var target = document.querySelectorAll(this.getAttribute('data-toggle-menu'))[0];
+                toggleClass(target, 'hidden');
+                var state = this.getAttribute('aria-expanded');
+                this.setAttribute('aria-expanded', !state);
+            },
+            false
+        );
+    });
+}
+toggleMenu();
+
+// toggleTarget('data-toggle-panel', ['block', 'hidden'], ['is-active']);

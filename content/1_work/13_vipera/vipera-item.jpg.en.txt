@@ -1,0 +1,5 @@
+Caption: Product page
+
+----
+
+Template: image

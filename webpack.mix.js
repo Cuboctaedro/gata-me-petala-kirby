@@ -8,20 +8,14 @@ mix
     .js("src/app.js", "assets")
     .copyDirectory("src/images", "assets/images")
     .copyDirectory("src/fonts", "assets/fonts")
-    .sass("src/app.scss", "assets")
+    .postCss('src/css/app.css', 'assets', [
+        require('tailwindcss'),
+    ])
     .options({
-        processCssUrls: false,
-         autoprefixer: {
-             options: {
-                 browsers: [
-                     'last 6 versions',
-                 ]
-             }
-         }
+         processCssUrls: false
     })
     .purgeCss({
-        folders: ['site/templates', 'site/snippets', 'site/snippets/form', 'site/snippets/nav'],
-        whitelist: ['is-active']
+        folders: ['site/templates', 'site/snippets', 'site/snippets/form', 'site/snippets/nav']
     })
     .version()
 

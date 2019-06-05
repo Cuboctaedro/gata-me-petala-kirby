@@ -1,0 +1,5 @@
+Caption: Panel composition
+
+----
+
+Template: image

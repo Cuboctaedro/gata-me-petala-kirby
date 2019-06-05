@@ -1,0 +1,5 @@
+Caption: Applications page
+
+----
+
+Template: image

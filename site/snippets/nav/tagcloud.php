@@ -8,6 +8,9 @@ $tags = $projects->children()->listed()->pluck('tags', ',', true);
 
 <nav class="tagcloud">
     <ul>
+        <li>
+            <a class="" href="<?= $projects->url() ?>">All projects</a>
+        </li>
     <?php foreach($tags as $tag): ?>
         <li>
             <a class="" href="<?= $projects->url() ?>/tag/<?= Str::kebab($tag) ?>"><?= $tag ?></a>
