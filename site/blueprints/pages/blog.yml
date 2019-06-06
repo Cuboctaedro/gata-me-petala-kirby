@@ -1,0 +1,28 @@
+title: Blog Page
+
+tabs:
+    content:
+        label:
+            en: Content
+            el: Περιεχόμενο
+        icon: text
+        columns:
+          - width: 2/3
+            sections:
+                blog:
+                    headline: Posts
+                    type: pages
+                    status: published
+                    templates: post
+                    parent: site.find("blog")
+                drafts:
+                    headline: Posts
+                    type: pages
+                    status: draft
+                    templates: post
+                    parent: site.find("blog")
+          - width: 1/3
+            sections:
+                pagefiles:
+                    extends: sections/pagefiles
+    seo: tabs/seo

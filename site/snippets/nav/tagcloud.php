@@ -2,7 +2,7 @@
 
 $projects = $site->find('work');
 
-$tags = $projects->children()->listed()->pluck('tags', ',', true);
+$menutags = $projects->children()->listed()->pluck('tags', ',', true);
 
 ?>
 
@@ -11,9 +11,9 @@ $tags = $projects->children()->listed()->pluck('tags', ',', true);
         <li>
             <a class="" href="<?= $projects->url() ?>">All projects</a>
         </li>
-    <?php foreach($tags as $tag): ?>
+    <?php foreach($menutags as $menutag): ?>
         <li>
-            <a class="" href="<?= $projects->url() ?>/tag/<?= Str::kebab($tag) ?>"><?= $tag ?></a>
+            <a class="<?php e(isset($tag) && Str::kebab($menutag) == $tag, 'text-black', '')?>" href="<?= $projects->url() ?>/tag/<?= Str::kebab($menutag) ?>"><?= $menutag ?></a>
         </li>
     <?php endforeach ?>
     </ul>

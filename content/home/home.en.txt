@@ -1,0 +1,19 @@
+Title: Home
+
+----
+
+Text: 
+
+----
+
+Description: Portfolio of Dimitris Kottas, gr45aphic Designer and Web Developer
+
+----
+
+Featuredimage: 
+
+- iccg-poster.jpg
+
+----
+
+Authortwitter: 

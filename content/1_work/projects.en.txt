@@ -1,1 +1,19 @@
 Title: Work
+
+----
+
+Text: 
+
+----
+
+Description: Portfolio of Dimitris Kottas, graphic designer and web developer.
+
+----
+
+Featuredimage: 
+
+- dimitriadis-home.jpg
+
+----
+
+Authortwitter: 
