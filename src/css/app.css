@@ -78,11 +78,11 @@ a:hover {
 }
 
 .heading-1 {
-    @apply text-3xl font-light leading-tight border-t border-solid border-red-600 pt-2 ;
+    @apply text-3xl leading-tight border-t border-solid border-red-600 pt-2 ;
 }
 @screen md {
     .heading-1 {
-        @apply text-5xl  ;
+        @apply text-5xl font-hairline ;
     }
 
 }

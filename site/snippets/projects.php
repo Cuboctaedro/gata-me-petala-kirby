@@ -25,7 +25,7 @@ $projects = $site->find('work');
                                 <img src="<?= $item->coverimage()->thumb([
                                     'width'   => 430,
                                     'height'  => 430
-                                ])->url() ?>" class="w-full block " />
+                                ])->url() ?>" class="w-full block lazyload" alt="<?= $item->title() ?> - Featured Image" />
                             </div>
                         <?php endif; ?>
                         <?php if($page == $projects): ?>

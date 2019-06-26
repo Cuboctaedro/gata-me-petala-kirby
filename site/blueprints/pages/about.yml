@@ -1,0 +1,32 @@
+title: About Page
+
+tabs:
+    content:
+        label:
+            en: Content
+            el: Περιεχόμενο
+        icon: text
+        columns:
+          - width: 2/3
+            sections:
+                content:
+                    type: fields
+                    fields:
+                        text:
+                            extends: fields/fulleditor
+                        linkliist:
+                            label: Link List
+                            type: structure
+                            fields:
+                                url:
+                                    label: URL
+                                    type: url
+                                text:
+                                    label: Text
+                                    type: text
+
+          - width: 1/3
+            sections:
+                pagefiles:
+                    extends: sections/pagefiles
+    seo: tabs/seo

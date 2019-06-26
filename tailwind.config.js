@@ -126,7 +126,7 @@ module.exports = {
 
         fontFamily: {
             sans: [
-                'acumin-pro',
+                'attribute-text',
                 '-apple-system',
                 'BlinkMacSystemFont',
                 '"Segoe UI"',
