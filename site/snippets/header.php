@@ -18,6 +18,7 @@
     <!-- <link href="https://fonts.googleapis.com/css?family=Alegreya+Sans:400,400i,800&display=swap&subset=greek" rel="stylesheet"> -->
 
     <?= mix('/app.css') ?>
+    <?= mix('/baguetteBox.css') ?>
 </head>
 
 <body class="font-sans text-base text-black bg-bluegray-500 <?php e($page->isHomePage(), ' bg-center bg-no-repeat bg-cover' , '') ?>" <?php if($page->isHomePage()): ?> style="background-image:url('<?= $page->featuredimage()->toFile()->url()?>');" <?php endif; ?> >

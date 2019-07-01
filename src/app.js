@@ -1,5 +1,5 @@
 import 'lazysizes';
-import GLightbox from 'glightbox'
+import baguetteBox from 'baguettebox.js';
 
 function addClass(el, className) {
     if (el.classList) {
@@ -103,6 +103,8 @@ function toggleSubmenu() {
 
 toggleSubmenu();
 
-var myLightbox = GLightbox({
-    'selector': 'glightbox'
+
+baguetteBox.run('.imagegallery', {
+    animation: 'fadeIn',
+    noScrollbars: true
 });

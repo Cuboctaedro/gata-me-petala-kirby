@@ -2,12 +2,13 @@ let mix = require('laravel-mix');
 require('laravel-mix-purgecss');
 
 mix.setPublicPath("assets")
-mix.browserSync("cuboctaedro.test")
+mix.browserSync("gatamepetala.test")
 mix
     .sourceMaps()
     .js("src/app.js", "assets")
     .copyDirectory("src/images", "assets/images")
     .copyDirectory("src/fonts", "assets/fonts")
+    .copy('src/css/baguetteBox.css', 'assets/baguetteBox.css')
     .postCss('src/css/app.css', 'assets', [
         require('tailwindcss'),
     ])

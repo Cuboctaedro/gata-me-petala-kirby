@@ -1,0 +1,31 @@
+title: Videos Page
+
+tabs:
+    content:
+        label: Content
+        icon: text
+        columns:
+          - width: 2/3
+            sections:
+                content:
+                    type: fields
+                    fields:
+                        text:
+                            extends: fields/fulleditor
+                        videolinks:
+                            type: structure
+                            label: Videos
+                            fields:
+                                title:
+                                    label: Title
+                                    type: text
+                                embedcode:
+                                    label: Embedcode
+                                    type: text
+                                    help: Get embed code from http://embedresponsively.com/
+
+          - width: 1/3
+            sections:
+                pagefiles:
+                    extends: sections/pagefiles
+    seo: tabs/seo

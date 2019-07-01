@@ -42,17 +42,25 @@ tabs:
                     status: all
                     templates: contact
                     max: 1
+                video:
+                    headline: Videos
+                    type: pages
+                    status: all
+                    templates: videos
+                    max: 1
           - width: 1/3
             sections:
                 menu:
                     headline: Menu
                     type: pages
-                    status: all
+                    status: published
+                    sortable: true
                     templates:
                       - default
                       - itemsection
                       - blog
                       - contact
+                      - videos
                 pagefiles:
                     extends: sections/pagefiles
     seo:
