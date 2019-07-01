@@ -1,5 +1,0 @@
-Caption: Booklet, themes page
-
-----
-
-Template: image

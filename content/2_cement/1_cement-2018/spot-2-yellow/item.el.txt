@@ -1,0 +1,45 @@
+Previewfiles: 
+
+----
+
+Title: σποτ 2, κίτρινο
+
+----
+
+Line-a: 
+
+----
+
+Featuredimage: 69.jpg
+
+----
+
+Type: 
+
+----
+
+Sold: 0
+
+----
+
+Line-b: 
+
+----
+
+Sku: 
+
+----
+
+Price: 
+
+----
+
+Line-c: 
+
+----
+
+Text: w:13 h:15 cm
+
+----
+
+Scematype: CreativeWork

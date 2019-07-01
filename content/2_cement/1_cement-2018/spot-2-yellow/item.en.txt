@@ -1,0 +1,25 @@
+Previewfiles: 
+
+----
+
+Title: spot 2, yellow
+
+----
+
+Line-a: 
+
+----
+
+Line-b: 
+
+----
+
+Line-c: 
+
+----
+
+Text: w:13 h:15 cm
+
+----
+
+Scematype: CreativeWork

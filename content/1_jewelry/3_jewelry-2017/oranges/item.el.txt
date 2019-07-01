@@ -1,0 +1,47 @@
+Previewfiles: 
+
+----
+
+Title: 
+
+Πορτοκάλια. Σκουλαρίκια. Ασήμι 925, πατίνα
+
+----
+
+Line-a: 
+
+----
+
+Featuredimage: img_3613-2.jpg
+
+----
+
+Type: 
+
+----
+
+Sold: 0
+
+----
+
+Line-b: 
+
+----
+
+Sku: 
+
+----
+
+Price: 
+
+----
+
+Line-c: 
+
+----
+
+Text: 
+
+----
+
+Scematype: CreativeWork

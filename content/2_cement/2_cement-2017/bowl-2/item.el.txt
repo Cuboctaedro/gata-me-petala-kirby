@@ -1,0 +1,36 @@
+Title: Μικρό γκρίζο 1
+
+----
+
+Contentblocks: 
+
+----
+
+Featuredimage: 50.jpg
+
+----
+
+Type: 
+
+----
+
+Sold: 1
+
+----
+
+Sku: 
+
+----
+
+Price: 
+
+----
+
+Text: 
+
+Ρηχό πιατάκι σε γκρι-μωβ αποχρώσεις.
+w:18 h: 4cm
+
+----
+
+Scematype: CreativeWork

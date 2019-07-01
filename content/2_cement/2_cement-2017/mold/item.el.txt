@@ -1,0 +1,35 @@
+Title: Μούχλα
+
+----
+
+Contentblocks: 
+
+----
+
+Featuredimage: 61.jpg
+
+----
+
+Type: 
+
+----
+
+Sold: 1
+
+----
+
+Sku: 
+
+----
+
+Price: 
+
+----
+
+Text: 
+
+Γκρί-πράσινο τσιμεντένιο πιάτο με χάραξη και ιδιαίτερες "υφές"
+
+----
+
+Scematype: CreativeWork

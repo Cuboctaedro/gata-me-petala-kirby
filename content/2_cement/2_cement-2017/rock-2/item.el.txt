@@ -1,0 +1,36 @@
+Title: Πέτρα 2
+
+----
+
+Contentblocks: 
+
+----
+
+Featuredimage: 65.jpg
+
+----
+
+Type: 
+
+----
+
+Sold: 0
+
+----
+
+Sku: 
+
+----
+
+Price: 
+
+----
+
+Text: 
+
+Βαρύ εγχάρακτο μπολ σε γκρίζους χρωματισμούς
+Πλάτος 24 εκ. , ύψος 7,5 εκ.
+
+----
+
+Scematype: CreativeWork

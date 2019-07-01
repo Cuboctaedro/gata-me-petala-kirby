@@ -1,0 +1,47 @@
+Previewfiles: 
+
+----
+
+Title: 
+
+Βραχιόλι με πέτρα. Ασήμι 925, αφρικανικό Τυρκουάζ.
+
+----
+
+Line-a: 
+
+----
+
+Featuredimage: kosmima-093.jpg
+
+----
+
+Type: 
+
+----
+
+Sold: 0
+
+----
+
+Line-b: 
+
+----
+
+Sku: 
+
+----
+
+Price: 
+
+----
+
+Line-c: 
+
+----
+
+Text: 
+
+----
+
+Scematype: CreativeWork

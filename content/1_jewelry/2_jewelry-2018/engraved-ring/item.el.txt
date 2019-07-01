@@ -1,0 +1,47 @@
+Title: 
+
+Εγχάρακτο δαχτυλίδι, ασήμι 925, οξείδωση
+
+----
+
+Itemtype: rings
+
+----
+
+Text: 
+
+Εγχάρακτο δαχτυλίδι. Ασήμι 925, πατίνα
+
+----
+
+Gallery: 
+
+----
+
+Featuredimage: 
+
+- a.jpg
+
+----
+
+Sku: 
+
+----
+
+Sold: false
+
+----
+
+Description: 
+
+----
+
+Authortwitter: 
+
+----
+
+Type: Rings
+
+----
+
+Scematype: CreativeWork

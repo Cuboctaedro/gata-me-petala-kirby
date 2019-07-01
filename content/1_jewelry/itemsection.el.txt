@@ -1,0 +1,29 @@
+Title: Κοσμήματα
+
+----
+
+Itemtypes: 
+
+- 
+  name: Δαχτυλίδια
+  slug: rings
+- 
+  name: Βραχιόλια
+  slug: bracelets
+- 
+  name: Σκουλαρίκια
+  slug: earrings
+- 
+  name: Καρφίτσες
+  slug: pins
+- 
+  name: Κολιέ
+  slug: necklaces
+
+----
+
+Description: 
+
+----
+
+Authortwitter: 

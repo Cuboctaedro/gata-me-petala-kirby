@@ -1,0 +1,47 @@
+Previewfiles: 
+
+----
+
+Title: 
+
+συλλογή
+
+----
+
+Line-a: 
+
+----
+
+Featuredimage: sam_2084.jpg
+
+----
+
+Type: 
+
+----
+
+Sold: 0
+
+----
+
+Line-b: 
+
+----
+
+Sku: 
+
+----
+
+Price: 
+
+----
+
+Line-c: 
+
+----
+
+Text: 
+
+----
+
+Scematype: CreativeWork

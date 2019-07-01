@@ -1,0 +1,19 @@
+Title: Leaves Necklace
+
+----
+
+Contentblocks: 
+
+----
+
+Text: 
+
+material: silver 925
+weight: 16.4 g
+length: 47 cm
+long leaf: 0.5 x 4 cm
+short leaf: 0.5 x 3 cm
+
+----
+
+Scematype: CreativeWork

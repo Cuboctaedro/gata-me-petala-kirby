@@ -1,0 +1,25 @@
+Previewfiles: 
+
+----
+
+Title: lamp 1, grey
+
+----
+
+Line-a: 
+
+----
+
+Line-b: 
+
+----
+
+Line-c: 
+
+----
+
+Text: w: 15 h: 18 cm
+
+----
+
+Scematype: CreativeWork

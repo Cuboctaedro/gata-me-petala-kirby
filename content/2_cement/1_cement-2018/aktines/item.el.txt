@@ -1,0 +1,45 @@
+Previewfiles: 
+
+----
+
+Title: ακτίνες
+
+----
+
+Line-a: 
+
+----
+
+Featuredimage: 60.jpg
+
+----
+
+Type: 
+
+----
+
+Sold: 1
+
+----
+
+Line-b: 
+
+----
+
+Sku: 
+
+----
+
+Price: 
+
+----
+
+Line-c: 
+
+----
+
+Text: w:24 h:8,5 cm
+
+----
+
+Scematype: CreativeWork

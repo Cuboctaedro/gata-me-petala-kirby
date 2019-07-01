@@ -13,46 +13,27 @@
         <?php endforeach; ?>
     <?php endif; ?>
     <?php snippet('meta');?>
-    <link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
-    <link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png">
-    <link rel="apple-touch-icon" sizes="72x72" href="/apple-icon-72x72.png">
-    <link rel="apple-touch-icon" sizes="76x76" href="/apple-icon-76x76.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="/apple-icon-114x114.png">
-    <link rel="apple-touch-icon" sizes="120x120" href="/apple-icon-120x120.png">
-    <link rel="apple-touch-icon" sizes="144x144" href="/apple-icon-144x144.png">
-    <link rel="apple-touch-icon" sizes="152x152" href="/apple-icon-152x152.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-icon-180x180.png">
-    <link rel="icon" type="image/png" sizes="192x192"  href="/android-icon-192x192.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-    <meta name="msapplication-TileColor" content="#ffffff">
-    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
-    <meta name="theme-color" content="#ffffff">
+    <link rel="stylesheet" href="https://use.typekit.net/oij5uex.css">
 
-    <link rel="stylesheet" href="https://use.typekit.net/ytb8mdx.css">
+    <!-- <link href="https://fonts.googleapis.com/css?family=Alegreya+Sans:400,400i,800&display=swap&subset=greek" rel="stylesheet"> -->
 
     <?= mix('/app.css') ?>
 </head>
 
-<body class="font-sans text-base text-gray-900 bg-white border-8 border-solid border-gray-200">
+<body class="font-sans text-base text-black bg-bluegray-500 <?php e($page->isHomePage(), ' bg-center bg-no-repeat bg-cover' , '') ?>" <?php if($page->isHomePage()): ?> style="background-image:url('<?= $page->featuredimage()->toFile()->url()?>');" <?php endif; ?> >
 
     <a class="skip-link" href="#main">Skip to content</a>
 
-    <div class="flex flex-col min-h-screen flex-none">
+    <div class="flex flex-col min-h-screen flex-none ">
 
-        <div class="container gutter flex flex-row flex-wrap justify-between items-center pt-2 mb-6 sm:mb-12 md:mb-24">
-            <?php if($page->isHomePage()): ?>
-                <h1 class="gutter">
-                    <a class="font-titles font-bold text-2xl" href="<?= $site->url() ?>"><?= $site->title() ?></a>
-                </h1>
-            <?php else: ?>
-                <span class="gutter"><a class="font-titles font-bold text-2xl" href="<?= $site->url() ?>"><?= $site->title() ?></a></span>
-            <?php endif; ?>
+        <div class="fixed w-full flex-none flex flex-row flex-wrap justify-between  h-12 mb-6 sm:mb-12 bg-teal-500 shadow-2xl text-white z-10">
             <?php snippet('nav/single'); ?>
-            <!-- <div class="w-full flex-none gutter">
-                <hr class="w-full h-0 block border-t border-solid border-gray-600 py-0 m-0" />
-            </div> -->
+            <?php snippet('nav/languages'); ?>
         </div>
 
-        <main class="flex-auto" id="main">
+        <main class="flex-auto pt-24" id="main">
+            <div class="container mb-12 md:mb-24 gutter">
+                <a class="block gutter w-full md:w-1/2 lg:w-1/3 xl:w-1/4 max-w-sm" href="<?= $site->url() ?>" title="Home Page">
+                    <?php snippet('logo'); ?>
+                </a>
+            </div>

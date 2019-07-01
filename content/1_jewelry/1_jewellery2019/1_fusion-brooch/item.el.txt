@@ -1,0 +1,35 @@
+Title: Fusion brooch, ασήμι, χαλκός
+
+----
+
+Itemtype: pins
+
+----
+
+Featuredimage: 
+
+- img_20181228_190627.jpg
+
+----
+
+Text: 
+
+----
+
+Gallery: 
+
+----
+
+Sku: 
+
+----
+
+Sold: false
+
+----
+
+Description: 
+
+----
+
+Authortwitter: 

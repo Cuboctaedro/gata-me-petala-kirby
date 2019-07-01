@@ -1,5 +1,0 @@
-Caption: Second part start
-
-----
-
-Template: image

@@ -2,9 +2,7 @@ title: Default Page
 
 tabs:
     content:
-        label:
-            en: Content
-            el: Περιεχόμενο
+        label: Content
         icon: text
         columns:
           - width: 2/3
@@ -14,6 +12,13 @@ tabs:
                     fields:
                         text:
                             extends: fields/fulleditor
+                        gallery:
+                            extends: fields/gallery
+                subpages:
+                    headline: Subpages
+                    type: pages
+                    status: all
+                    templates: default
 
           - width: 1/3
             sections:

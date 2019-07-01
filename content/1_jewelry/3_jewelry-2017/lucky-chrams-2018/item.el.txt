@@ -1,0 +1,47 @@
+Previewfiles: 
+
+----
+
+Title: 
+
+Γούρια 2018, ασήμι 925, οξείδωση, συνθετικές κλωστές
+
+----
+
+Line-a: 
+
+----
+
+Featuredimage: sam_2572.jpg
+
+----
+
+Type: Objects
+
+----
+
+Sold: 0
+
+----
+
+Line-b: 
+
+----
+
+Sku: 
+
+----
+
+Price: 
+
+----
+
+Line-c: 
+
+----
+
+Text: 
+
+----
+
+Scematype: CreativeWork

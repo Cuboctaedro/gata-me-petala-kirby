@@ -1,0 +1,45 @@
+Previewfiles: 
+
+----
+
+Title: Σποτ 1, γκρι
+
+----
+
+Line-a: 
+
+----
+
+Featuredimage: 69.jpg
+
+----
+
+Type: 
+
+----
+
+Sold: 0
+
+----
+
+Line-b: 
+
+----
+
+Sku: 
+
+----
+
+Price: 
+
+----
+
+Line-c: 
+
+----
+
+Text: w: 15,5 h: 17 cm
+
+----
+
+Scematype: CreativeWork

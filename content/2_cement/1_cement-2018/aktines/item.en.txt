@@ -1,0 +1,25 @@
+Previewfiles: 
+
+----
+
+Title: aktines
+
+----
+
+Line-a: 
+
+----
+
+Line-b: 
+
+----
+
+Line-c: 
+
+----
+
+Text: w:24 h:8,5 cm
+
+----
+
+Scematype: CreativeWork

@@ -1,5 +1,0 @@
-Caption: Website, homepage
-
-----
-
-Template: image

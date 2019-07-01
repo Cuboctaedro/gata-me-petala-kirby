@@ -1,0 +1,47 @@
+Previewfiles: 
+
+----
+
+Title: 
+
+Τυρκουάζ παραγωνα, μικρά. Σκουλαρίκια, ασήμι 925, πατίνα, ρητίνη
+
+----
+
+Line-a: 
+
+----
+
+Featuredimage: img_20190530_181339-2.jpg
+
+----
+
+Type: 
+
+----
+
+Sold: 0
+
+----
+
+Line-b: 
+
+----
+
+Sku: 
+
+----
+
+Price: 
+
+----
+
+Line-c: 
+
+----
+
+Text: 
+
+----
+
+Scematype: CreativeWork

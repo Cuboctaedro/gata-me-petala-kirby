@@ -1,0 +1,45 @@
+Previewfiles: 
+
+----
+
+Title: σποτ 3, μπλε
+
+----
+
+Line-a: 
+
+----
+
+Featuredimage: 73.jpg
+
+----
+
+Type: 
+
+----
+
+Sold: 0
+
+----
+
+Line-b: 
+
+----
+
+Sku: 
+
+----
+
+Price: 
+
+----
+
+Line-c: 
+
+----
+
+Text: w:15 h:15 cm
+
+----
+
+Scematype: CreativeWork

@@ -1,5 +1,0 @@
-Caption: Smart Home Extensions
-
-----
-
-Template: image

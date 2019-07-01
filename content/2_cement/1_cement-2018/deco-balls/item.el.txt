@@ -1,0 +1,45 @@
+Previewfiles: 
+
+----
+
+Title: Διακοσμητικές μπάλες
+
+----
+
+Line-a: 
+
+----
+
+Featuredimage: 76.jpg
+
+----
+
+Type: 
+
+----
+
+Sold: 0
+
+----
+
+Line-b: 
+
+----
+
+Sku: 
+
+----
+
+Price: 
+
+----
+
+Line-c: 
+
+----
+
+Text: Διάφορα μεγέθη
+
+----
+
+Scematype: CreativeWork

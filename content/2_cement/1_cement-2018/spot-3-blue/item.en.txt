@@ -1,0 +1,25 @@
+Previewfiles: 
+
+----
+
+Title: spot 3, blue
+
+----
+
+Line-a: 
+
+----
+
+Line-b: 
+
+----
+
+Line-c: 
+
+----
+
+Text: w:15 h:15 cm
+
+----
+
+Scematype: CreativeWork

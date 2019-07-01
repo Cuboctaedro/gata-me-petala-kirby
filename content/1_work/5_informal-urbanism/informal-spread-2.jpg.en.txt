@@ -1,5 +1,0 @@
-Caption: Spread
-
-----
-
-Template: image

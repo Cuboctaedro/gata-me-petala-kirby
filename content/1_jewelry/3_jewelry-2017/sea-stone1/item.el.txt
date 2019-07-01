@@ -1,0 +1,47 @@
+Previewfiles: 
+
+----
+
+Title: 
+
+Βότσαλο 1, δαχτυλίδι, ασήμι 925, φυσικό βότσαλο
+
+----
+
+Line-a: 
+
+----
+
+Featuredimage: sam_2207-2.jpg
+
+----
+
+Type: Rings
+
+----
+
+Sold: 0
+
+----
+
+Line-b: 
+
+----
+
+Sku: 
+
+----
+
+Price: 
+
+----
+
+Line-c: 
+
+----
+
+Text: 
+
+----
+
+Scematype: CreativeWork

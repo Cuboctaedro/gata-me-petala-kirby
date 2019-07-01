@@ -1,0 +1,25 @@
+Previewfiles: 
+
+----
+
+Title: Spot 1, grey
+
+----
+
+Line-a: 
+
+----
+
+Line-b: 
+
+----
+
+Line-c: 
+
+----
+
+Text: w: 15,5 h: 17 cm
+
+----
+
+Scematype: CreativeWork

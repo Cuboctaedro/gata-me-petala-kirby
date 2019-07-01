@@ -1,0 +1,48 @@
+title: Item Page
+
+tabs:
+    content:
+        label: Content
+        icon: text
+        columns:
+          - width: 2/3
+            sections:
+                content:
+                    type: fields
+                    fields:
+                        itemtype:
+                            type: select
+                            options: query
+                            query:
+                                fetch: page.parent.parent.itemtypes.toStructure
+                                text: "{{ structureItem.name }}"
+                                value: "{{ structureItem.slug }}"
+                        featuredimage:
+                            type: files
+                            layout: cards
+                            multiple: false
+                            label: Αρχική Εικόνα
+                        text:
+                            extends: fields/fulleditor
+                        gallery:
+                            extends: fields/gallery
+          - width: 1/3
+            sections:
+                pagefiles:
+                    extends: sections/pagefiles
+                images:
+                    type: fields
+                    fields:
+                        sku:
+                            label: Item code
+                            type: text
+                            translate: false
+                        price:
+                            label: Price
+                            type: number
+                            translate: false
+                        sold:
+                            text: Is it sold?
+                            type: toggle
+
+    seo: tabs/seo

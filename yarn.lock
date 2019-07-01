@@ -2737,6 +2737,11 @@ get-value@^2.0.3, get-value@^2.0.6:
   version "2.0.6"
   resolved "https://registry.yarnpkg.com/get-value/-/get-value-2.0.6.tgz#dc15ca1c672387ca76bd37ac0a395ba2042a2c28"
 
+glightbox@^2.0.1:
+  version "2.0.1"
+  resolved "https://registry.yarnpkg.com/glightbox/-/glightbox-2.0.1.tgz#6a411d48c9fa73d54cb2c7c421c7cf480d960654"
+  integrity sha512-IYScZq5+vH8usPQiJmJJ+lBDXau7tallcg/3VuJ/ub/5d6HYQyVZyOuSPPJtCge3UYTEG0cQSOP0xqpakAy6JQ==
+
 glob-all@^3.1.0:
   version "3.1.0"
   resolved "https://registry.yarnpkg.com/glob-all/-/glob-all-3.1.0.tgz#8913ddfb5ee1ac7812656241b03d5217c64b02ab"

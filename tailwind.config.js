@@ -4,7 +4,7 @@ module.exports = {
             sm: '480px',
             md: '768px',
             lg: '1024px',
-            xl: '1280px',
+            xl: '1340px',
         },
         colors: {
           transparent: 'transparent',
@@ -23,6 +23,21 @@ module.exports = {
             800: '#333333',
             900: '#1a1a1a',
           },
+          teal: {
+            100: '#86BDBD',
+            300: '#597D7D',
+            500: '#507070',
+            700: '#3E5757',
+            900: '#334747',
+          },
+          bluegray: {
+            100: '#D6D5CB',
+            300: '#C9C8BF',
+            500: '#B0AFA7',
+            700: '#8A8983',
+            900: '#4A4A46',
+          },
+
           red: {
             100: '#fff5f5',
             200: '#fed7d7',
@@ -66,17 +81,6 @@ module.exports = {
             700: '#2f855a',
             800: '#276749',
             900: '#22543d',
-          },
-          teal: {
-            100: '#e6fffa',
-            200: '#b2f5ea',
-            300: '#81e6d9',
-            400: '#4fd1c5',
-            500: '#38b2ac',
-            600: '#319795',
-            700: '#2c7a7b',
-            800: '#285e61',
-            900: '#234e52',
           },
           blue: {
             100: '#ebf8ff',
@@ -126,7 +130,8 @@ module.exports = {
 
         fontFamily: {
             sans: [
-                'attribute-text',
+                'foco',
+                'Alegreya Sans',
                 '-apple-system',
                 'BlinkMacSystemFont',
                 '"Segoe UI"',

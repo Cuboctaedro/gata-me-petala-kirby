@@ -1,0 +1,47 @@
+Previewfiles: 
+
+----
+
+Title: 
+
+Πολύχρωμα, σκουλαρίκια, ασήμι 925, συνθετικά νήματα
+
+----
+
+Line-a: 
+
+----
+
+Featuredimage: sam_2653.jpg
+
+----
+
+Type: Earrings
+
+----
+
+Sold: 0
+
+----
+
+Line-b: 
+
+----
+
+Sku: 
+
+----
+
+Price: 
+
+----
+
+Line-c: 
+
+----
+
+Text: 
+
+----
+
+Scematype: CreativeWork

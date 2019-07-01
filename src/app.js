@@ -1,4 +1,5 @@
 import 'lazysizes';
+import GLightbox from 'glightbox'
 
 function addClass(el, className) {
     if (el.classList) {
@@ -66,7 +67,7 @@ function toggleMenu() {
             'click',
             function(event) {
                 var target = document.querySelectorAll(this.getAttribute('data-toggle-menu'))[0];
-                toggleClass(target, 'hidden');
+                toggleClass(target, 'show');
                 var state = this.getAttribute('aria-expanded');
                 this.setAttribute('aria-expanded', !state);
             },
@@ -76,4 +77,32 @@ function toggleMenu() {
 }
 toggleMenu();
 
-// toggleTarget('data-toggle-panel', ['block', 'hidden'], ['is-active']);
+function toggleSubmenu() {
+    var togglesArray = Array.from(document.querySelectorAll('[data-toggle-submenu]'));
+
+    var targets = togglesArray.map(toggle => document.querySelectorAll(toggle.getAttribute('data-toggle-submenu'))[0]);
+
+    togglesArray.forEach(function(item) {
+        item.addEventListener(
+            'click',
+            function(event) {
+                var subtarget = document.querySelectorAll(this.getAttribute('data-toggle-submenu'))[0];
+                subtarget.hidden = !subtarget.hidden;
+                targets.forEach(function(el) {
+                    if (el != subtarget ) {
+                        el.hidden = true;
+                    }
+                })
+                var state = this.getAttribute('aria-expanded');
+                this.setAttribute('aria-expanded', !state);
+            },
+            false
+        );
+    });
+}
+
+toggleSubmenu();
+
+var myLightbox = GLightbox({
+    'selector': 'glightbox'
+});

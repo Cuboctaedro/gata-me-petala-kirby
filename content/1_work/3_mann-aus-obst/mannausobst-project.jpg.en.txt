@@ -1,5 +1,0 @@
-Caption: Project page
-
-----
-
-Template: image

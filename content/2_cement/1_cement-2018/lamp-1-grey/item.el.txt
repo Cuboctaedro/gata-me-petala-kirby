@@ -1,0 +1,45 @@
+Previewfiles: 
+
+----
+
+Title: Φωτιστικό 1, γκρι
+
+----
+
+Line-a: 
+
+----
+
+Featuredimage: 74.jpg
+
+----
+
+Type: 
+
+----
+
+Sold: 0
+
+----
+
+Line-b: 
+
+----
+
+Sku: 
+
+----
+
+Price: 
+
+----
+
+Line-c: 
+
+----
+
+Text: w: 15 h: 18 cm
+
+----
+
+Scematype: CreativeWork

@@ -1,5 +1,0 @@
-Caption: Digital Architecture 2
-
-----
-
-Template: image

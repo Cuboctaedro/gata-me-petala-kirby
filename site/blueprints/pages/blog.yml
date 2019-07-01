@@ -10,16 +10,10 @@ tabs:
           - width: 2/3
             sections:
                 blog:
-                    headline: Posts
+                    headline: Articles
                     type: pages
-                    status: published
-                    templates: post
-                    parent: site.find("blog")
-                drafts:
-                    headline: Posts
-                    type: pages
-                    status: draft
-                    templates: post
+                    status: all
+                    templates: article
                     parent: site.find("blog")
           - width: 1/3
             sections:

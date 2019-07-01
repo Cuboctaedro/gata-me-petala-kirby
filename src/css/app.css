@@ -1,3 +1,5 @@
+@import "glightbox.css";
+
 @tailwind base;
 
 @tailwind components;
@@ -23,6 +25,9 @@
 .honeypot-field {
     position: absolute;
     left: -9999px;
+}
+[hidden] {
+  display: none;
 }
 
 .visually-hidden {
@@ -70,38 +75,46 @@
 }
 
 a {
-    @apply text-gray-700 ;
+    @apply text-white ;
 }
 
-a:hover {
-    @apply text-red-700 ;
+
+.leading-12 {
+    line-height: 3rem;
 }
 
 .heading-1 {
-    @apply text-3xl leading-tight border-t border-solid border-red-600 pt-2 ;
+    @apply text-2xl font-hairline leading-tight border-t border-solid border-gray-800 uppercase tracking-wider ;
 }
-@screen md {
-    .heading-1 {
-        @apply text-5xl font-hairline ;
-    }
-
-}
-
-
-
 .heading-2 {
-    @apply font-bold ;
+    @apply text-3xl font-hairline leading-tight border-t border-solid border-gray-800 ;
 }
-.heading-2 > a {
-    @apply text-gray-900 ;
-}
-.heading-2 > a:hover {
-    @apply text-red-700 ;
-}
+
 /*
 .heading-3 {
     @apply text-lg font-black font-sans ;
 }  */
+
+.line {
+    @apply text-white relative ;
+}
+.line::after {
+    content: '';
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 1px;
+    transition: width 0.3s;
+    transition-timing-function: ease;
+    @apply bg-white ;
+}
+.line:hover::after {
+    width: 100%;
+}
+
+
 
 .generated {
     @apply text-base leading-normal ;
@@ -113,7 +126,22 @@ a:hover {
     @apply mb-0;
 }
 .generated a {
-    @apply text-base ;
+    @apply text-white relative ;
+}
+.generated a::after {
+    content: '';
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 1px;
+    transition: width 0.3s;
+    transition-timing-function: ease;
+    @apply bg-white ;
+}
+.generated a:hover::after {
+    width: 100%;
 }
 .generated code {
     @apply text-base ;
@@ -145,3 +173,40 @@ a:hover {
 .project-card:hover img {
     filter: grayscale(0%);
 } */
+
+
+.main-menu {
+    left: 2rem;
+    /* right: 2rem; */
+    top: 4rem;
+    @apply hidden ;
+}
+.main-menu.show {
+    @apply flex ;
+}
+@screen lg {
+    .main-menu {
+        @apply flex ;
+    }
+}
+.imageframe {
+    height:0;
+    padding-top: 66.666%;
+    @apply bg-teal-500 ;
+}
+
+.card-thumb {
+    @apply shadow-md ;
+}
+.card-container:hover .card-thumb {
+    @apply shadow-xl ;
+}
+.homebox {
+    background-color: rgba(56,53,55,0.5);
+}
+.homebox p {
+    margin-bottom: 1rem;
+}
+.homebox p:last-child {
+    margin-bottom: 0;
+}

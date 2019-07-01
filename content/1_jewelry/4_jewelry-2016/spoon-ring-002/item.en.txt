@@ -1,0 +1,17 @@
+Title: Spoon Ring
+
+----
+
+Contentblocks: 
+
+----
+
+Text: 
+
+material: silver 925
+weight: 10.4 g
+width: 2.0 cm
+
+----
+
+Scematype: CreativeWork

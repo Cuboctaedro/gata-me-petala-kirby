@@ -1,5 +1,0 @@
-Caption: Spread with tables
-
-----
-
-Template: image

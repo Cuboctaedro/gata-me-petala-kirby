@@ -1,5 +1,0 @@
-Caption: Posters
-
-----
-
-Template: image
