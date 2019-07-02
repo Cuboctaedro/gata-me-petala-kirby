@@ -16,7 +16,9 @@ mix
          processCssUrls: false
     })
     .purgeCss({
-        folders: ['site/templates', 'site/snippets', 'site/snippets/form', 'site/snippets/nav']
+        folders: ['site/templates', 'site/snippets', 'site/snippets/form', 'site/snippets/nav'],
+        whitelist: ['show']
+
     })
     .version()
 

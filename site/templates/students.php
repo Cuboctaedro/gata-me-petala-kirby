@@ -12,10 +12,9 @@
                     <header class="gutter mb-12">
                         <h2 class="heading-1"><?= $item->title() ?></h2>
                     </header>
-                    <ul class="flex flex-row flex-wrap" >
+                    <div class="flex flex-row flex-wrap imagegallery" >
                         <?php foreach ($item->images() as $subitem): ?>
-                        <li class="gutter w-full md:w-1/2 lg:w-1/3 xl:w-1/4 mb-8">
-                            <a class=" glightbox" href="<?= $subitem->url() ?>">
+                            <a data-caption="<?= $subitem->caption() ?>" class="gutter w-full md:w-1/2 lg:w-1/3 xl:w-1/4 mb-8"  href="<?= $subitem->url() ?>">
                                 <img src="<?= $subitem->thumb([
                                     'width'   => 432,
                                     'height'  => 432,
@@ -24,9 +23,8 @@
                                 ])->url() ?>" class="block w-full shadow-md hover:shadow-xl"  />
                                 <p class="text-center text-base pt-1 text-black"><?= $subitem->caption() ?></p>
                             </a>
-                        </li>
                         <?php endforeach; ?>
-                    </ul>
+                    </div>
                 </section>
             </li>
         <?php endforeach; ?>
