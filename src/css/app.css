@@ -111,7 +111,24 @@ a {
 .line:hover::after {
     width: 100%;
 }
-
+.blueline {
+    @apply text-teal-500 relative ;
+}
+.blueline::after {
+    content: '';
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 1px;
+    transition: width 0.3s;
+    transition-timing-function: ease;
+    @apply bg-teal-500 ;
+}
+.blueline:hover::after {
+    width: 100%;
+}
 
 
 .generated {
@@ -207,4 +224,14 @@ a {
 }
 .homebox p:last-child {
     margin-bottom: 0;
+}
+
+.hometext {
+    @apply text-gray-100 ;
+}
+.hometext a {
+    @apply text-gray-300 underline ;
+}
+.hometext a:hover {
+    @apply text-teal-500 ;
 }
