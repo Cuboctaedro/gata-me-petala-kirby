@@ -112,7 +112,7 @@ a {
     width: 100%;
 }
 .blueline {
-    @apply text-teal-500 relative ;
+    @apply text-teal-100 relative ;
 }
 .blueline::after {
     content: '';
@@ -124,7 +124,7 @@ a {
     height: 1px;
     transition: width 0.3s;
     transition-timing-function: ease;
-    @apply bg-teal-500 ;
+    @apply bg-teal-100 ;
 }
 .blueline:hover::after {
     width: 100%;
@@ -217,7 +217,7 @@ a {
     @apply shadow-xl ;
 }
 .homebox {
-    background-color: rgba(56,53,55,0.5);
+    background-color: rgba(56,53,55,0.7);
 }
 .homebox p {
     margin-bottom: 1rem;
@@ -233,5 +233,5 @@ a {
     @apply text-gray-300 underline ;
 }
 .hometext a:hover {
-    @apply text-teal-500 ;
+    @apply text-teal-300 ;
 }
